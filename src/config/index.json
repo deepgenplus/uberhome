@@ -1,0 +1,168 @@
+{
+  "company": {
+    "name": "Uber Home",
+    "logo": "/assets/images/logo.png"
+  },
+  "navigation": [
+    {
+      "name": "About",
+      "href": "Case"
+    },
+    {
+      "name": "Case",
+      "href": "whygooddeal"
+    },
+
+    {
+      "name": "Why",
+      "href": "recommended"
+    },
+    {
+      "name": "Service",
+      "href": "feedback"
+    },
+    {
+      "name": "FAQ",
+      "href": "contractflow"
+    }
+  ],
+  "callToAction": {
+    "text": "お部屋を送る",
+    "href": "#"
+  },
+  "mainHero": {
+    "title": "自分でお部屋を探して初期費用を最小限に",
+    "sendBtnTitle": "今すぐお部屋を送る",
+    "img": "/assets/images/happyTeam.jpeg",
+    "primaryAction": {
+      "text": "Get started",
+      "href": "#"
+    },
+    "secondaryAction": {
+      "text": "Email us",
+      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+    }
+  },
+  "product": {
+    "title": "React landing page 2021",
+    "items": [
+      {
+        "title": "A plug n play template",
+        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "img": "/assets/images/product1.jpg"
+      },
+      {
+        "title": "Make it your own!",
+        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "img": "/assets/images/product2.jpg"
+      }
+    ]
+  },
+  "cases": {
+    "title": "初期費用を最小限に抑えてお届け。",
+    "subtitle1": "サービス手数料や別名目を上乗せすることは一切ありません。<br>その他、仲介会社独自でご紹介しているオプションサービス*の上乗せもありません。",
+    "subtitle2": "*管理会社指定のオプションサービスの場合は実費料金が発生します。",
+    "subtitle3": "​家賃8万円、敷金・礼金・仲介手数料が1ヶ月の場合​​",
+    "table1": {
+      "title": "一般的な初期費用",
+      "rows": [
+        {
+          "key": "前家賃",
+          "value": "80,000円"
+        },
+        {
+          "key": "敷金",
+          "value": "80,000円"
+        },
+        {
+          "key": "礼金",
+          "value": "80,000円"
+        },
+        {
+          "key": "仲介手数料",
+          "value": "88,000円"
+        }
+      ]
+    },
+    "table2": {
+      "title": "Uber Homeの初期費用",
+      "rows": [
+        {
+          "key": "前家賃",
+          "value": "80,000円"
+        },
+        {
+          "key": "敷金",
+          "value": "80,000円"
+        },
+        {
+          "key": "礼金",
+          "value": "80,000円"
+        },
+        {
+          "key": "仲介手数料",
+          "value": "0円"
+        }
+      ]
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "items": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "priceDetails": "for one user",
+        "features": [
+          "1 user",
+          "Basic Support",
+          "1 GB of storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$15",
+        "priceDetails": "per user",
+
+        "features": [
+          "5 users",
+          "Priority Support",
+          "10 GB of storage",
+          "Phone and Email support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$29",
+        "priceDetails": "per user",
+        "features": [
+          "50 users",
+          "24/7 Support",
+          "100 GB of storage",
+          "Phone and Email support"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Uber Home",
+    "steps": [
+      {
+        "title": "お部屋を送る",
+        "content": "​賃貸物件サイトなどで見つけた気になるお部屋のURLをメールかLINEで送るだけ。<br>1回につき3物件までOK",
+        "img": "about_step_01.png"
+      },
+      {
+        "title": "空室確認・手数料診断",
+        "content": "空室確認や仲介手数料が</span>いくらになるかをUber Homeが確認。<br>仲介手数料は、<br><span class='text-color-third font-bold'><span class='text-3xl'>0</span>円</span><span> or </span><span class='text-color-third font-bold'><span class='text-3xl'>2,5</span>万円</span>（税込）",
+        "img": "about_step_02.png"
+      },
+      {
+        "title": "お申込み・ご契約",
+        "content": "申込みや契約は来店不要でWEBでのご対応が可能。<br>初期費用もクレジットカード払い*が可能です。",
+        "img": "about_step_03.png"
+      }
+    ]
+  }
+}

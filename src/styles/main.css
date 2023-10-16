@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #00a0e9;
+  --color-secondary: #FD7622;
+  --color-tertiaty: #99a0a3;
+  --color-green: #1dc245;
+  --color-third: #c43735;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.text-color-primary {
+  color: var(--color-primary);
+}
+
+.text-color-third {
+  color: var(--color-third);
+}
+
+/* Topbar and Hero */
+
+.topbar {
+  background-color: var(--color-primary);
+}
+
+.topbar nav a {
+  font-size: 16px;
+}
+
+.topbar nav a:hover {
+  text-decoration: none;
+}
+
+.topbar nav .btn-send-room {
+  font-size: 18px;
+  background-color: var(--color-third);
+  border-radius: 10px;
+}
+
+.main-hero {
+  position: relative;
+}
+
+.main-hero .hero-background {
+  width: 100%;
+  height: 517px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.cta-panel {
+  max-width: 732px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-panel .tag-img {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.cta-panel .cta-main-panel {
+  min-height: 284px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.cta-panel .cta-main-panel hr {
+  border-color: black;
+  border-width: 1px;
+}
+
+.cta-panel .btn-send-room {
+  width: 100%;
+  font-size: 24px;
+  background-color: var(--color-third);
+  border-radius: 7px;
+}
+
+/* About Component */
+
+#about {
+  background: #f2f9fc;
+}
+
+#about .about-content {
+  width: 730px;
+  font-size: 26px;
+  line-height: 48px;
+  text-align: justify;
+}
+
+.about-step-card {
+  width: 300px;
+  height: 430px;
+  border-color: var(--color-primary);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  background: white;
+}
+
+.about-step-card .about-step-card-img {
+  width: 100%;
+  background: white;
+}
+
+.about-step-card .about-step-card-title {
+  width: 100%;
+  color: white;
+  background: var(--color-primary);
+  font-size: 20px;
+}
+
+.about-step-card .about-step-card-content {
+  width: 100%;
+  height: 175px;
+  font-size: 18px;
+}
+
+/* Case Component */
+
+#case {
+  background: #FDF4D8;
+}
+
+#case .case-container .case-title-div{
+  max-width: 600px;
+}
