@@ -23,11 +23,14 @@ const WhyFeedback: React.FC<WhyFeedbackProps> = ({
           src={img}
           alt="avatar"
         />
-        <div className={`why-feedback-card-comment`}>{comment}</div>
+        <div className={`why-feedback-card-comment flex items-center`}>
+          {comment}
+        </div>
       </div>
-      <div className={`why-feedback-card-content text-justify p-4`}>
+      <div className={`why-feedback-card-content text-justify mt-4 p-4`}>
         {content}
       </div>
+      <div className={`text-sm mt-3`}>{bottomTip}</div>
     </div>
   );
 };

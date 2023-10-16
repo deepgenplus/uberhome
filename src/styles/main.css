@@ -131,8 +131,6 @@ body {
 }
 
 #about .about-content {
-  width: 730px;
-  font-size: 26px;
   line-height: 48px;
   text-align: justify;
 }
@@ -263,7 +261,7 @@ body {
 }
 
 #why .why-recommend-panel .why-feedback-card .why-feedback-card-comment {
-  height: 150px;
+  height: 140px;
 }
 
 #why .why-recommend-panel .why-feedback-card .why-feedback-card-content {
