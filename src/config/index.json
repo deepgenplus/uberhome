@@ -6,24 +6,24 @@
   "navigation": [
     {
       "name": "About",
-      "href": "Case"
+      "href": "about"
     },
     {
       "name": "Case",
-      "href": "whygooddeal"
+      "href": "case"
     },
 
     {
       "name": "Why",
-      "href": "recommended"
+      "href": "why"
     },
     {
       "name": "Service",
-      "href": "feedback"
+      "href": "service"
     },
     {
       "name": "FAQ",
-      "href": "contractflow"
+      "href": "faq"
     }
   ],
   "callToAction": {

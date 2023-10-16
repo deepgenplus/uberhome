@@ -44,6 +44,7 @@ const Menu = () => {
                   duration={1000}
                   key={item.name}
                   to={item.href}
+                  offset={-100}
                   className="text-white cursor-pointer hover:no-underline"
                 >
                   {item.name}

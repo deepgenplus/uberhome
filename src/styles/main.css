@@ -119,6 +119,31 @@ body {
   color: white;
   background: var(--color-primary);
   font-size: 20px;
+  position: relative;
+}
+
+.about-step-card:not(:last-child) .about-step-card-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -12px; /* Adjust the distance from the right side as needed */
+  transform: translateY(-50%);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 11px solid var(--color-primary);
+  z-index: 10;
+}
+
+.about-step-card:not(:first-child) .about-step-card-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5px; /* Adjust the distance from the right side as needed */
+  transform: translateY(-50%);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 11px solid #f2f9fc;
+  z-index: 9;
 }
 
 .about-step-card .about-step-card-content {
@@ -166,8 +191,6 @@ body {
   background: #e6e6e6;
   text-align: center;
 }
-
-
 
 #case .case-container .case-compare-table table td:nth-child(2) {
   border-bottom: 2px dotted;
