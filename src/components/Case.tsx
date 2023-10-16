@@ -4,7 +4,7 @@ import config from '../config/index.json';
 
 const Case = () => {
   const { cases } = config;
-  const { title, subtitle1, subtitle2, subtitle3, table1, table2 } = cases;
+  const { title, subtitle1, subtitle2, firstCompare, secondCompare } = cases;
   return (
     <div className={`py-12`} id="case">
       <div
@@ -24,42 +24,142 @@ const Case = () => {
             className={`text-center text-lg mb-8`}
             dangerouslySetInnerHTML={{ __html: subtitle2 }}
           ></div>
-          <div className={`text-center text-lg`}>
-            <span className={`border-2 border-black px-8 py-1`}>
-              {subtitle3}
-            </span>
-          </div>
         </div>
-        <div className={`flex justify-center mt-10`}>
-          <div className={`case-compare-table`}>
-            <table className={`table-auto border-collapse mx-auto`}>
+        <div className={`text-center text-lg pt-8 pb-7`}>
+          <span className={`border-2 border-black px-8 py-1`}>
+            {firstCompare.title}
+          </span>
+        </div>
+        <div
+          className={`flex justify-center lg:gap-x-10 lg:flex-row md:gap-y-10 md:flex-col`}
+        >
+          <div className={`case-compare-table md:mx-auto`}>
+            <table className={`table-auto border-separate w-full mx-5`}>
               <thead>
                 <tr>
-                  <th rowSpan={2}>{table1.title}</th>
+                  <th colSpan={2} className={`py-3 text-2xl`}>
+                    {firstCompare.table1.title}
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {table1.rows.map((row, index) => (
-                  <tr key={index}>
-                    <td>{row.key}</td>
-                    <td>{row.value}</td>
+                {firstCompare.table1.rows.map((row, index) => (
+                  <tr key={index} className={`text-center`}>
+                    <td className={`text-xl py-2 w-1/3 font-bold`}>
+                      {row.key}
+                    </td>
+                    <td
+                      className={`text-xl py-2 w-2/3`}
+                      dangerouslySetInnerHTML={{ __html: row.value }}
+                    ></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div
+              className={`font-bold text-center mx-5 items-center w-full flex mt-3`}
+            >
+              <div className={`w-1/3 text-xl`}>合計</div>
+              <div className={`w-2/3`}>
+                <span className={`text-4xl`}>328,000</span>
+                <span className={`text-2xl`}>円</span>
+              </div>
+            </div>
+          </div>
+          <div className={`case-compare-table md:mx-auto`}>
+            <table className={`table-auto border-separate w-full mx-5`}>
+              <thead>
+                <tr>
+                  <th colSpan={2} className={`py-3 text-2xl`}>
+                    {firstCompare.table2.title}
+                  </th>
+                </tr>
+              </thead>
+              <tbody className={`gap-y-10`}>
+                {firstCompare.table2.rows.map((row, index) => (
+                  <tr key={index} className={`text-center`}>
+                    <td className={`text-xl py-2 w-1/3 font-bold`}>
+                      {row.key}
+                    </td>
+                    <td
+                      className={`text-xl py-2 w-2/3`}
+                      dangerouslySetInnerHTML={{ __html: row.value }}
+                    ></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div
+              className={`font-bold text-center mx-5 items-center w-full flex mt-3`}
+            >
+              <div className={`w-1/3 text-xl`}>合計</div>
+              <div className={`w-2/3 text-color-third`}>
+                <span className={`text-4xl`}>240,000</span>
+                <span className={`text-2xl`}>円</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={`mt-10 ml-6`}>
+          {firstCompare.comments.map((comment, index) => (
+            <div key={index} className={`py-1`}>
+              {comment.content}
+            </div>
+          ))}
+        </div>
+        <div className={`text-center text-2xl pt-12 pb-6`}>
+          <span
+            className={`border-b-2 border-black border-solid font-bold px-3 py-1`}
+          >
+            {secondCompare.title}
+          </span>
+        </div>
+        <div
+          className={`flex justify-center lg:gap-x-10 lg:flex-row md:gap-y-10 md:flex-col`}
+        >
+          <div className={`case-compare-table md:mx-auto`}>
+            <table className={`table-auto border-separate w-full mx-5`}>
+              <thead>
+                <tr>
+                  <th colSpan={2} className={`py-3 text-2xl`}>
+                    {secondCompare.table1.title}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {secondCompare.table1.rows.map((row, index) => (
+                  <tr key={index} className={`text-center`}>
+                    <td className={`text-lg py-2 w-1/3 font-bold`}>
+                      {row.key}
+                    </td>
+                    <td
+                      className={`text-xl py-2 w-2/3`}
+                      dangerouslySetInnerHTML={{ __html: row.value }}
+                    ></td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <div className={`case-compare-table`}>
-            <table className={`table-auto border-collapse mx-auto`}>
+          <div className={`case-compare-table md:mx-auto`}>
+            <table className={`table-auto border-separate w-full mx-5`}>
               <thead>
                 <tr>
-                  <th rowSpan={2}>{table2.title}</th>
+                  <th colSpan={2} className={`py-3 text-2xl`}>
+                    {secondCompare.table2.title}
+                  </th>
                 </tr>
               </thead>
-              <tbody>
-                {table2.rows.map((row, index) => (
-                  <tr key={index}>
-                    <td>{row.key}</td>
-                    <td>{row.value}</td>
+              <tbody className={`gap-y-10`}>
+                {secondCompare.table2.rows.map((row, index) => (
+                  <tr key={index} className={`text-center`}>
+                    <td className={`text-lg py-2 w-1/3 font-bold`}>
+                      {row.key}
+                    </td>
+                    <td
+                      className={`text-xl py-2 w-2/3`}
+                      dangerouslySetInnerHTML={{ __html: row.value }}
+                    ></td>
                   </tr>
                 ))}
               </tbody>

@@ -62,46 +62,109 @@
     "title": "初期費用を最小限に抑えてお届け。",
     "subtitle1": "サービス手数料や別名目を上乗せすることは一切ありません。<br>その他、仲介会社独自でご紹介しているオプションサービス*の上乗せもありません。",
     "subtitle2": "*管理会社指定のオプションサービスの場合は実費料金が発生します。",
-    "subtitle3": "​家賃8万円、敷金・礼金・仲介手数料が1ヶ月の場合​​",
-    "table1": {
-      "title": "一般的な初期費用",
-      "rows": [
+    "firstCompare": {
+      "title": "​家賃8万円、敷金・礼金・仲介手数料が1ヶ月の場合",
+      "table1": {
+        "title": "一般的な初期費用",
+        "rows": [
+          {
+            "key": "前家賃",
+            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+          },
+          {
+            "key": "敷金",
+            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+          },
+          {
+            "key": "礼金",
+            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+          },
+          {
+            "key": "仲介手数料",
+            "value": "<span class='text-3xl font-bold'>88,000</span> <span class='font-bold'>円</span>"
+          }
+        ]
+      },
+      "table2": {
+        "title": "Uber Homeの初期費用",
+        "rows": [
+          {
+            "key": "前家賃",
+            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+          },
+          {
+            "key": "敷金",
+            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+          },
+          {
+            "key": "礼金",
+            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+          },
+          {
+            "key": "仲介手数料",
+            "value": "<span class='text-3xl font-bold text-color-third'>0</span> <span class='font-bold text-color-third'>円</span>"
+          }
+        ]
+      },
+      "comments": [
         {
-          "key": "前家賃",
-          "value": "80,000円"
+          "content": "※その他 諸費用として鍵交換料・火災保険料等がかかります。"
         },
         {
-          "key": "敷金",
-          "value": "80,000円"
-        },
-        {
-          "key": "礼金",
-          "value": "80,000円"
-        },
-        {
-          "key": "仲介手数料",
-          "value": "88,000円"
+          "content": "※オーナー様から広告料がない場合は、仲介手数料25,000円（税込）がかかります。"
         }
       ]
     },
-    "table2": {
-      "title": "Uber Homeの初期費用",
-      "rows": [
+    "secondCompare": {
+      "title": "賃貸ポータルサイトの場合",
+      "table1": {
+        "title": "一般的な初期費用",
+        "rows": [
+          {
+            "key": "仲介手数純",
+            "value": "賃料の1ヶ月分など"
+          },
+          {
+            "key": "ー別名目の費用",
+            "value": "<span>オプションサービス等の<br>不要な上乗せの可能性も</span>"
+          },
+          {
+            "key": "おとり物件",
+            "value": "<span>すでに決まっている<br>可能性のお部屋も</span>"
+          },
+          {
+            "key": "ご紹介方法",
+            "value": "とにかく一度来店を勧められる"
+          }
+        ]
+      },
+      "table2": {
+        "title": "Uber Homeの場合",
+        "rows": [
+          {
+            "key": "仲介手数純",
+            "value": "<span class='font-bold'><span class='text-color-third text-4xl'>0</span><span> 円 or </span><span class='text-color-third text-4xl'>2,5</span> 万円</span>"
+          },
+          {
+            "key": "ー別名目の費用",
+            "value": "<span class='text-2xl font-bold'>ない</span>"
+          },
+          {
+            "key": "おとり物件",
+            "value": "<span class='text-2xl font-bold'>ない</span>"
+          },
+          {
+            "key": "ご紹介方法",
+            "value": "<span class='text-2xl font-bold'>物件情報を送るだけ</span>"
+          }
+        ]
+      },
+      "comments": [
         {
-          "key": "前家賃",
-          "value": "80,000円"
+          "content": "※その他 諸費用として鍵交換料・火災保険料等がかかります。"
         },
         {
-          "key": "敷金",
-          "value": "80,000円"
-        },
-        {
-          "key": "礼金",
-          "value": "80,000円"
-        },
-        {
-          "key": "仲介手数料",
-          "value": "0円"
+          "content": "※オーナー様から広告料がない場合は、仲介手数料25,000円（税込）がかかります。"
         }
       ]
     }

@@ -136,3 +136,40 @@ body {
 #case .case-container .case-title-div{
   max-width: 600px;
 }
+
+#case .case-container .case-compare-table {
+  width: 465px;
+}
+
+#case .case-container .case-compare-table table {
+  border-spacing: 10px;
+}
+
+#case .case-container .case-compare-table table th {
+  border: none;
+  background: #e6e6e6;
+  text-align: center;
+}
+
+#case .case-container .case-compare-table:nth-child(2) table th {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 100;
+}
+
+#case .case-container .case-compare-table table td {
+  height: 75px;
+}
+
+#case .case-container .case-compare-table table td:first-child {
+  border: none;
+  background: #e6e6e6;
+  text-align: center;
+}
+
+
+
+#case .case-container .case-compare-table table td:nth-child(2) {
+  border-bottom: 2px dotted;
+  text-align: center;
+}
