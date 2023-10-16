@@ -11,7 +11,9 @@ const Case = () => {
         className={`case-container mx-auto 2xl:w-3/5 xl:w-2/3 lg:w-3/4 w-full`}
       >
         <div className={`w-full`}>
-          <span className={`text-5xl font-bold ml-8`}>Case</span>
+          <span className={`text-5xl font-bold`}>
+            <span className={`text-color-third`}>C</span>ase
+          </span>
           <span className={`ml-4`}>初期費用の例</span>
         </div>
         <div className="case-title-div mx-auto">

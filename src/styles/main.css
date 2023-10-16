@@ -5,7 +5,7 @@
 
 :root {
   --color-primary: #00a0e9;
-  --color-secondary: #FD7622;
+  --color-secondary: #fd7622;
   --color-tertiaty: #99a0a3;
   --color-green: #1dc245;
   --color-third: #c43735;
@@ -23,14 +23,52 @@ body {
   color: var(--color-third);
 }
 
+.shine {
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.shine::before {
+  content: "";
+  -webkit-animation: shine 3s cubic-bezier(0.25, 0, 0.25, 1) infinite;
+  animation: shine 3s cubic-bezier(0.25, 0, 0.25, 1) infinite;
+  background-color: #fff;
+  width: 140%;
+  height: 100%;
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  top: 0;
+  left: -160%;
+  opacity: 0;
+  position: absolute;
+  z-index: inherit;
+}
+
+@keyframes shine {
+  0% {
+    left: -160%;
+    opacity: 0;
+  }
+  70% {
+    left: -160%;
+    opacity: 0.5;
+  }
+  71% {
+    left: -160%;
+    opacity: 1;
+  }
+  100% {
+    left: -20%;
+    opacity: 0;
+  }
+}
+
 /* Topbar and Hero */
 
 .topbar {
   background-color: var(--color-primary);
-}
-
-.topbar nav a {
-  font-size: 16px;
 }
 
 .topbar nav a:hover {
@@ -39,8 +77,8 @@ body {
 
 .topbar nav .btn-send-room {
   font-size: 18px;
-  background-color: var(--color-third);
-  border-radius: 10px;
+  background-color: var(--color-green);
+  border-radius: 100px;
 }
 
 .main-hero {
@@ -195,4 +233,40 @@ body {
 #case .case-container .case-compare-table table td:nth-child(2) {
   border-bottom: 2px dotted;
   text-align: center;
+}
+
+/* Why */
+#why {
+  background: var(--color-primary);
+}
+
+#why .why-info-card {
+  background: white;
+  border-radius: 5px;
+}
+
+#why .why-info-card .why-info-card-title {
+  background: var(--color-green);
+  border-radius: 5px;
+}
+
+#why .why-info-card:nth-child(4) .why-info-card-title {
+  border: 2px solid var(--color-green)!important;
+  background: white!important;
+  color: var(--color-green);
+}
+
+#why .why-recommend-panel .why-feedback-card {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 7px;
+}
+
+#why .why-recommend-panel .why-feedback-card .why-feedback-card-comment {
+  height: 150px;
+}
+
+#why .why-recommend-panel .why-feedback-card .why-feedback-card-content {
+  background: #fdf4d8;
+  border-radius: 5px;
 }
