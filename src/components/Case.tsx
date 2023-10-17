@@ -33,9 +33,9 @@ const Case = () => {
           </span>
         </div>
         <div
-          className={`flex justify-center lg:gap-x-10 lg:flex-row md:gap-y-10 md:flex-col`}
+          className={`flex justify-center lg:gap-x-10 lg:flex-row flex-col gap-y-10`}
         >
-          <div className={`case-compare-table md:mx-auto`}>
+          <div className={`case-compare-table md:mx-auto sm:mx-auto`}>
             <table className={`table-auto border-separate w-full mx-5`}>
               <thead>
                 <tr>
@@ -68,7 +68,7 @@ const Case = () => {
               </div>
             </div>
           </div>
-          <div className={`case-compare-table md:mx-auto`}>
+          <div className={`case-compare-table md:mx-auto sm:mx-auto`}>
             <table className={`table-auto border-separate w-full mx-5`}>
               <thead>
                 <tr>
@@ -117,9 +117,9 @@ const Case = () => {
           </span>
         </div>
         <div
-          className={`flex justify-center lg:gap-x-10 lg:flex-row md:gap-y-10 md:flex-col`}
+          className={`flex justify-center lg:gap-x-10 lg:flex-row gap-y-10 flex-col`}
         >
-          <div className={`case-compare-table md:mx-auto`}>
+          <div className={`case-compare-table md:mx-auto sm:mx-auto`}>
             <table className={`table-auto border-separate w-full mx-5`}>
               <thead>
                 <tr>
@@ -143,7 +143,7 @@ const Case = () => {
               </tbody>
             </table>
           </div>
-          <div className={`case-compare-table md:mx-auto`}>
+          <div className={`case-compare-table md:mx-auto sm:mx-auto`}>
             <table className={`table-auto border-separate w-full mx-5`}>
               <thead>
                 <tr>

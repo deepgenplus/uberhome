@@ -13,9 +13,9 @@ import Why from '../components/Why';
 
 const App = () => {
   return (
-    <div className={`bg-background grid overflow-hidden`}>
+    <div className={`bg-background`}>
       <div className={`relative bg-background`}>
-        <div className={`relative z-10 bg-background lg:w-full`}>
+        <div className={`relative z-10 bg-background`}>
           <Header />
           <MainHero />
         </div>
