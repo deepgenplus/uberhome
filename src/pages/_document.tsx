@@ -7,7 +7,15 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+          <title>LINEで賃貸</title>
+          <meta name="description" content="LINEで賃貸 Landing Page." />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+            id="wixDesktopViewport"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />

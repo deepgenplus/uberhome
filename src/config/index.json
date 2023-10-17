@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "Uber Home",
+    "name": "LINEで賃貸",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
@@ -44,7 +44,7 @@
     }
   },
   "about": {
-    "title": "Uber Home",
+    "title": "LINEで賃貸",
     "steps": [
       {
         "title": "お部屋を送る",
@@ -53,7 +53,7 @@
       },
       {
         "title": "空室確認・手数料診断",
-        "content": "空室確認や仲介手数料が</span>いくらになるかをUber Homeが確認。<br>仲介手数料は、<br><span class='text-color-third font-bold'><span class='text-3xl'>0</span>円</span><span> or </span><span class='text-color-third font-bold'><span class='text-3xl'>2,5</span>万円</span>（税込）",
+        "content": "空室確認や仲介手数料が</span>いくらになるかをLINEで賃貸が確認。<br>仲介手数料は、<br><span class='text-color-third font-bold'><span class='text-3xl'>0</span>円</span><span> or </span><span class='text-color-third font-bold'><span class='text-3xl'>2,5</span>万円</span>（税込）",
         "img": "about_step_02.png"
       },
       {
@@ -91,7 +91,7 @@
         ]
       },
       "table2": {
-        "title": "Uber Homeの初期費用",
+        "title": "LINEで賃貸の初期費用",
         "rows": [
           {
             "key": "前家賃",
@@ -144,7 +144,7 @@
         ]
       },
       "table2": {
-        "title": "Uber Homeの場合",
+        "title": "LINEで賃貸の場合",
         "rows": [
           {
             "key": "仲介手数純",
@@ -152,11 +152,11 @@
           },
           {
             "key": "ー別名目の費用",
-            "value": "<span class='text-2xl font-bold'>ない</span>"
+            "value": "<span class='text-2xl font-bold'>ない<br>です</span>"
           },
           {
             "key": "おとり物件",
-            "value": "<span class='text-2xl font-bold'>ない</span>"
+            "value": "<span class='text-2xl font-bold'>ない<br>です</span>"
           },
           {
             "key": "ご紹介方法",
@@ -176,7 +176,7 @@
   },
   "why": {
     "title": "オーナー様から広告料があるお部屋は、<span class='text-color-third font-bold'>仲介手数料を<span class='text-4xl'>0</span>円</span>でご紹介。",
-    "firstComment": "一般的に不動産会社は、オーナー様からいただく広告料とお客様からいただく仲介手数料で成り立っていますが、Uber Homeはオーナー様からいただく広告料だけで運営し、お客様の負担を最小限に抑えることが可能です。<br>また、Uber Homeは実店舗を持たないことで店舗コストの削減や、来店・接客を不要とした業務のシステム化を図り、お客様に無駄な費用をいただくことなく、最大限の賃貸サービスを提供することができるようになりました。<br>但し、オーナー様から広告料がないお部屋も中にはあります。<br>その場合はサイト運営上、家賃がいくらであっても一律2,5万円（税込）をご負担いただいております。",
+    "firstComment": "一般的に不動産会社は、オーナー様からいただく広告料とお客様からいただく仲介手数料で成り立っていますが、LINEで賃貸はオーナー様からいただく広告料だけで運営し、お客様の負担を最小限に抑えることが可能です。<br>また、LINEで賃貸は実店舗を持たないことで店舗コストの削減や、来店・接客を不要とした業務のシステム化を図り、お客様に無駄な費用をいただくことなく、最大限の賃貸サービスを提供することができるようになりました。<br>但し、オーナー様から広告料がないお部屋も中にはあります。<br>その場合はサイト運営上、家賃がいくらであっても一律2,5万円（税込）をご負担いただいております。",
     "whyInfoCard1": {
       "title": "オーナー様から広告料がある場合",
       "leftImg": "why_card_woman.png",
@@ -195,34 +195,42 @@
       "bottomTitleTopTip": "(税込)"
     },
     "arrowImg": "why_card_arrow.png",
-    "secondComment": "Uber Homeはお客様に無駄な費用をいただくことなく気に入ったお部屋に入居いただくことを最優先としています。<br>サイトコンセプトを崩さないようUber Homeだけが得をするようなお部屋に誘導をしません。<br>その為<span class='text-color-third font-bold'>ご自身でお部屋を探された分</span>、お客様に低コストな初期費用でご満足いただける賃貸サービスを提供させていただきます。",
+    "secondComment": "LINEで賃貸はお客様に無駄な費用をいただくことなく気に入ったお部屋に入居いただくことを最優先としています。<br>サイトコンセプトを崩さないようLINEで賃貸だけが得をするようなお部屋に誘導をしません。<br>その為<span class='text-color-third font-bold'>ご自身でお部屋を探された分</span>、お客様に低コストな初期費用でご満足いただける賃貸サービスを提供させていただきます。",
     "recommendTitle": "こんな方にオススメ",
     "feedbacks": [
       {
         "img": "why_feedback_avatar_1.png",
         "comment": "不動産会社が勧めてくるお部屋は自分が物件サイトで見ていたお部屋ばかり。それなら自分で探しているのと変わらないと思った方。",
-        "content": "Uber Homeなら、その物件サイトで見ていたお部屋を仲介手数料0円 or 2,8万円てご紹介することができます。",
+        "content": "LINEで賃貸なら、その物件サイトで見ていたお部屋を仲介手数料0円 or 2,5万円てご紹介することができます。",
         "bottomTip": "※一部、特定の会社てし力、扱えないお部屋がごさいます。"
       },
       {
         "img": "why_feedback_avatar_2.png",
         "comment": "​自分が物件サイトで見つけたお部屋なのに、不動産会社に仲介手数料を1ヶ月分請求された。ほとんど自分で探したのにとモヤモヤした方。​",
-        "content": "Uber Homeは、そんな方にピッタリです。ご自身で探された分、初期費用を最小限に抑えてお届けします。",
+        "content": "LINEで賃貸は、そんな方にピッタリです。ご自身で探された分、初期費用を最小限に抑えてお届けします。",
         "bottomTip": "※広告料がないお部屋は仲介手数料2,5万円（税込）です。"
       },
       {
         "img": "why_feedback_avatar_3.png",
         "comment": "不動産会社に行く時間もなく何回も引越しをしているから間取りを見れば大体分かる。それなのに来店するよう急かされてうっとうしく感じた方。",
-        "content": "Uber Homeなら、来店・接客が不要なため気になるお部屋を送っていただき、空いていればすぐWEB等で申込手続きが可能です。",
+        "content": "LINEで賃貸なら、来店・接客が不要なため気になるお部屋を送っていただき、空いていればすぐWEB等で申込手続きが可能です。",
         "bottomTip": "※お部屋によって異なる場合があります。"
       },
       {
         "img": "why_feedback_avatar_4.png",
         "comment": "他の仲介手数料無料のサービスに問い合わせたら、違うお部屋ばかり紹介してこられた。結局、希望のお部屋は空いていないと言われてがっかりした方。",
-        "content": "Uber Homeは、お部屋のご提案をしない賃貸サービス。その為、不動産会社が得をしたいお部屋を勧めたりすることはありません。",
+        "content": "LINEで賃貸は、お部屋のご提案をしない賃貸サービス。その為、不動産会社が得をしたいお部屋を勧めたりすることはありません。",
         "bottomTip": "※お問い合わせ後、最新の空室情報を確認します。"
       }
     ]
+  },
+  "sendRoom": {
+    "title": "さっそくお部屋を送る​",
+    "subtitle": "現在、お問い合わせが集中しており、タイミングによってはお返事にお時間をいただく場合があります。あらかじめご了承ください。",
+    "leftSmallTitle": "賃貸物件サイトに完全対応​​​",
+    "leftComment": "気になるお部屋が掲載されているホームページのアドレス(URL)をコピーして、メールかLINEでお送りください。",
+    "leftBottomTip": "※東京23区・その近郊エリアがサービス対象エリアになります。",
+    "rightGuideImg": "sendroom.png"
   },
   "pricing": {
     "title": "Pricing",

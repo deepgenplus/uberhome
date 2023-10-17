@@ -17,10 +17,7 @@ const Menu = () => {
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <a href="#">
-                <span className="text-3xl font-bold text-white">
-                  <span className={`text-color-third`}>U</span>ber{' '}
-                  <span className={`text-color-third`}>H</span>ome
-                </span>
+                <span className="text-2xl text-white">LINEで賃貸</span>
               </a>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button

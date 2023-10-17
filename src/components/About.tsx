@@ -21,16 +21,12 @@ const About = () => {
         <img src="03.png" alt="03" height="145" />
       </div>
       <div className={`font-bold text-black py-6`}>
-        <div className={`text-5xl`}>
-          <span className={`text-color-third`}>U</span>ber{' '}
-          <span className={`text-color-third`}>H</span>ome
-        </div>
+        <div className={`text-4xl`}>LINEで賃貸</div>
         <div
           className={`about-content text-3xl mt-2 mx-auto px-10 2xl:w-3/5 xl:w-2/3 lg:w-3/4 w-full`}
         >
           <span>
-            Uber
-            Home（ウーバーホーム）はお客様ご自身で、物件サイトからお気に入りのお部屋を探していただくことにより、仲介手数料を
+            LINEで賃貸はお客様ご自身で、物件サイトからお気に入りのお部屋を探していただくことにより、仲介手数料を
           </span>
           <span className={`text-color-third`}>0円</span>
           <span> or </span>

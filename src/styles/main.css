@@ -268,3 +268,54 @@ body {
   background: #fdf4d8;
   border-radius: 5px;
 }
+
+/* SendRoom */
+#sendroom hr {
+  border-color: var(--color-primary);
+  border-width: 3px;
+}
+
+#sendroom .phone-guide-panel .phone-guide-left-title {
+  background: var(--color-primary);
+}
+
+#sendroom .phone-guide-panel .phone-guide-left-comment {
+  background: #fdf4d8;
+}
+
+#sendroom .sendroom-tabs {
+  border: 2px solid #e6e6e6;
+}
+
+#sendroom .sendroom-tabs .sendroom-tab {
+  background: #e6e6e6;
+  color: black;
+  border: 1px solid white;
+}
+
+#sendroom .sendroom-tabs .sendroom-tab.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+#sendroom .sendroom-tabs .sendroom-tab:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+#sendroom .sendroom-form .sendroom-form-label.required:after {
+  content: "*";
+  color: var(--color-third);
+}
+
+#sendroom .sendroom-form .sendroom-form-input {
+  width: 100%;
+  height: 45px;
+  padding: 2px 5px;
+  margin: 5px 0px;
+  border: 2px solid #e6e6e6;
+}
+
+#sendroom .sendroom-form .sendroom-form-input:focus {
+  border-color: var(--color-third)!important;
+}
