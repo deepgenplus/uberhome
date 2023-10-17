@@ -23,6 +23,10 @@ body {
   color: var(--color-third);
 }
 
+.bg-color-primary {
+  background-color: var(--color-primary);
+}
+
 .shine {
   border: 2px solid transparent;
   position: relative;
@@ -231,6 +235,39 @@ body {
 #case .case-container .case-compare-table table td:nth-child(2) {
   border-bottom: 2px dotted;
   text-align: center;
+}
+
+/********** services ***********/
+.service-top, .service-bottom {
+  max-width: 980px;
+}
+
+.comp-l9fux78n {
+  width: 396px;
+  height: auto;
+}
+
+.KcpHeO {
+  position: relative;
+  margin: 73px 0px 22px calc((100% - 539px) * 0.5);
+  left: 20px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+.letter-space-normal {
+}
+
+.service-text__text {
+  font-size: '18px';
+  line-height: 1.8em;
+  letter-space: normal;
+  color:#38404B;
+}
+
+p.service-text__text {
+  line-height: '1.8em';
 }
 
 /* Why */
