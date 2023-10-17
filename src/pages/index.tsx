@@ -3,6 +3,7 @@ import React from 'react';
 import About from '../components/About';
 import Case from '../components/Case';
 import FAQ from '../components/FAQ';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
@@ -35,6 +36,7 @@ const App = () => {
         <FAQ />
       </LazyShow>
       <SendRoom />
+      <Footer />
     </div>
   );
 };

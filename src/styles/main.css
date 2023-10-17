@@ -335,3 +335,9 @@ body {
 #sendroom .line-guide-panel {
   background: #fdf4d8;
 }
+
+/* Footer Component */
+
+#footer {
+  background: var(--color-primary);
+}

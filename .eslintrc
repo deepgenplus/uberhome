@@ -6,7 +6,7 @@
       "error",
       {
         "singleQuote": true,
-        "linebreak-style": "off"
+        "linebreak-style": ["off"]
       }
     ]
   },
@@ -28,7 +28,7 @@
           "error",
           {
             "singleQuote": true,
-            "linebreak-style": "off"
+            "linebreak-style": ["off"]
           }
         ],
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable

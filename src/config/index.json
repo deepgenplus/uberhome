@@ -257,6 +257,30 @@
       }
     }
   },
+  "footer": {
+    "firstLinks": [
+      {"title": "LINEで賃貸とは", "url": "/"},
+      {"title": "初期費用の例", "url": "/"},
+      {"title": "​仲介手数料が0円の理由", "url": "/"},
+      {"title": "​サービス概要", "url": "/"},
+      {"title": "​よくある質問​", "url": "/"}
+    ],
+    "secondLinks": [
+      {"title": "​利用規約​", "url": "/terms"},
+      {"title": "​プライバシーポリシー​", "url": "/privacypolicy"},
+      {"title": "仲介手数料について​", "url": "/brokerage-fee"}
+    ],
+    "firmSummary": [
+      {"content": "サービス運営元：LINEで賃貸"},
+      {"content": "業務提携先：株式会社S-KH"},
+      {"content": "免許：東京都知事（1）第109197号"},
+      {"content": "東京都北区田端4-2-7 佐藤ビル101"}
+    ],
+    "contacts": [
+      {"content": "LINEで賃貸お客様サポート"},
+      {"content": "support@uberhome.info"}
+    ]
+  },
   "pricing": {
     "title": "Pricing",
     "items": [
