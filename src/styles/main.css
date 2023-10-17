@@ -336,6 +336,35 @@ body {
   background: #fdf4d8;
 }
 
+/* FAQ */
+
+#faq {
+  background: #fdf4d8;
+}
+
+#faq .faq-card {
+  background: white;
+  border-radius: 10px;
+}
+
+#faq .faq-card .faq-prefix-div {
+  width: 35px;
+  text-align: right;
+}
+
+#faq .faq-card .faq-prefix-div.question {
+  color: #00a0e9;
+}
+
+#faq .faq-card .faq-prefix-div.answer {
+  color: #ff0000;
+}
+
+#faq .faq-card .faq-content-div {
+  width: calc(100% - 35px);
+  padding-left: 20px;
+}
+
 /* Footer Component */
 
 #footer {
