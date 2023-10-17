@@ -59,12 +59,14 @@ const Why = () => {
                 className={`opacity-20 rotate-180`}
                 alt="RightArrow"
               />
-              <div className={`flex flex-col text-5xl text-center`}>
-                <span className={`font-bold tracking-widest`}>
-                  <span className={`text-color-third`}>U</span>ber
+              <div className={`flex flex-col text-center`}>
+                <span className={`font-bold text-5xl tracking-widest`}>
+                  LINE
                 </span>
-                <span className={`font-bold tracking-tighter -mt-6`}>
-                  <span className={`text-color-third`}>H</span>ome
+                <span
+                  className={`font-bold text-4xl tracking-tighter -mt-4 -ml-3`}
+                >
+                  で賃貸
                 </span>
               </div>
               <img src={arrowImg} alt="LeftArrow" />
@@ -105,11 +107,13 @@ const Why = () => {
               </div>
               <img src={arrowImg} alt="RightArrow" className={`rotate-180`} />
               <div className={`flex flex-col text-5xl text-center`}>
-                <span className={`font-bold tracking-widest`}>
-                  <span className={`text-color-third`}>U</span>ber
+                <span className={`font-bold text-5xl tracking-widest`}>
+                  LINE
                 </span>
-                <span className={`font-bold tracking-tighter -mt-6`}>
-                  <span className={`text-color-third`}>H</span>ome
+                <span
+                  className={`font-bold text-4xl tracking-tighter -mt-4 -ml-3`}
+                >
+                  で賃貸
                 </span>
               </div>
               <img src={arrowImg} className={`opacity-20`} alt="LeftArrow" />

@@ -230,7 +230,32 @@
     "leftSmallTitle": "賃貸物件サイトに完全対応​​​",
     "leftComment": "気になるお部屋が掲載されているホームページのアドレス(URL)をコピーして、メールかLINEでお送りください。",
     "leftBottomTip": "※東京23区・その近郊エリアがサービス対象エリアになります。",
-    "rightGuideImg": "sendroom.png"
+    "rightGuideImg": "sendroom.png",
+    "lineTab": {
+      "leftTopComment": "<a class='underline-offset-4' href='#'>利用規約</a>と<span class='underline-offset-4' href='#'>プライバシーポリシー</span>にご同意いただいた上、LINEで賃貸のLINEアカウントに気になるお部屋のアドレス(URL)と、ご入居希望日をお送りください。<br />最新の空室状況を確認してご連絡します。",
+      "leftBottomComment": "まずは<span class='text-color-third'>友だち追加</span>をお願いします。<br />クリックするとQRコードが表示されます。",
+      "rightImg": "tab_line_chat_screen.png",
+      "lineBtnRightComment": "＼ LINE始めました！／",
+      "lineBtnImg": "btn_go_to_line.png",
+      "lineUrl": "",
+      "guides": {
+        "title": "LINEで賃貸からのお願いごと",
+        "contents": [
+          {
+            "value": "お送りいただく物件数は1回のお問い合わせにつき、3物件まででお願いしております。"
+          },
+          {
+            "value": "ご入居希望日が2カ月後以降の方は期日が近づきましたらお送りください。"
+          },
+          {
+            "value": "特定の不動産会社でしか扱えないお部屋はご対応できません。"
+          },
+          {
+            "value": "​他の不動産会社で交渉中・申込中のお部屋はご遠慮ください。"
+          }
+        ]
+      }
+    }
   },
   "pricing": {
     "title": "Pricing",
