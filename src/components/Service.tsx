@@ -131,10 +131,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div
-        className={`grid grid-cols-1 gap-y-16 lg:grid-cols-2 bg-white`}
-        style={{ borderBottom: '5px solid #000' }}
-      >
+      <div className={`grid grid-cols-1 gap-y-16 lg:grid-cols-2 bg-white`}>
         <div className={`flex flex-col gap-y-4`}>
           <img
             src="1.jpg"
@@ -212,7 +209,7 @@ const Service = () => {
                   style={{ fontSize: '18px' }}
                   className="service-text__text"
                 >
-                  Uber Homeはお客様の引越しに伴う初期費用を最小限に抑えるため
+                  LINEで賃貸はお客様の引越しに伴う初期費用を最小限に抑えるため
                 </span>
               </span>
               <span className="service-text__text font-bold">
@@ -236,7 +233,7 @@ const Service = () => {
 
             <p className="service-text__text" style={{ marginBottom: '30px' }}>
               <span className="service-text__text">
-                Uber Homeでは、今の時代に合った新しい形で賃貸サービスを
+                LINEで賃貸では、今の時代に合った新しい形で賃貸サービスを
               </span>
               <span className="service-text__text">
                 <span className="service-text__text">提供して</span>
@@ -273,7 +270,7 @@ const Service = () => {
               <span className="service-text__text">
                 <span className="service-text__text">
                   <span className="service-text__text">
-                    <span>Uber Homeをお試しください。</span>
+                    <span>LINEで賃貸をお試しください。</span>
                   </span>
                 </span>
               </span>

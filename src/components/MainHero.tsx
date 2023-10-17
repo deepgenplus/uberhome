@@ -11,11 +11,13 @@ const MainHero = () => {
         <div className={`cta-panel absolute`}>
           <div className={`cta-main-panel pt-7 -pb-5`}>
             <img className="tag-img" src="01.png" alt="01" />
-            <div className={`font-semibold text-2xl text-center`}>
+            <div className={`font-semibold xl:text-2xl lg:text-xl text-center`}>
               {mainHero.title}
             </div>
             <hr className="my-5 mx-8"></hr>
-            <div className={`font-bold text-4xl text-center mx-10`}>
+            <div
+              className={`font-bold xl:text-4xl lg:text-3xl md:text-2xl text-center mx-10`}
+            >
               <div>他サイトで見つけた気になるお部屋</div>
               <div className="-mt-6">
                 仲介手数料{' '}

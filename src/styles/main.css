@@ -5,7 +5,7 @@
 
 :root {
   --color-primary: #00a0e9;
-  --color-secondary: #FD7622;
+  --color-secondary: #fd7622;
   --color-tertiaty: #99a0a3;
   --color-green: #1dc245;
   --color-third: #c43735;
@@ -26,14 +26,53 @@ body {
 .bg-color-primary {
   background-color: var(--color-primary);
 }
+
+.shine {
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.shine::before {
+  content: "";
+  -webkit-animation: shine 3s cubic-bezier(0.25, 0, 0.25, 1) infinite;
+  animation: shine 3s cubic-bezier(0.25, 0, 0.25, 1) infinite;
+  background-color: #fff;
+  width: 140%;
+  height: 100%;
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  top: 0;
+  left: -160%;
+  opacity: 0;
+  position: absolute;
+  z-index: inherit;
+}
+
+@keyframes shine {
+  0% {
+    left: -160%;
+    opacity: 0;
+  }
+  70% {
+    left: -160%;
+    opacity: 0.5;
+  }
+  71% {
+    left: -160%;
+    opacity: 1;
+  }
+  100% {
+    left: -20%;
+    opacity: 0;
+  }
+}
+
 /* Topbar and Hero */
 
 .topbar {
   background-color: var(--color-primary);
-}
-
-.topbar nav a {
-  font-size: 16px;
 }
 
 .topbar nav a:hover {
@@ -42,8 +81,8 @@ body {
 
 .topbar nav .btn-send-room {
   font-size: 18px;
-  background-color: var(--color-third);
-  border-radius: 10px;
+  background-color: var(--color-green);
+  border-radius: 100px;
 }
 
 .main-hero {
@@ -96,8 +135,6 @@ body {
 }
 
 #about .about-content {
-  width: 730px;
-  font-size: 26px;
   line-height: 48px;
   text-align: justify;
 }
@@ -231,4 +268,142 @@ body {
 
 p.service-text__text {
   line-height: '1.8em';
+}
+
+/* Why */
+#why {
+  background: var(--color-primary);
+}
+
+#why .why-info-card {
+  background: white;
+  border-radius: 5px;
+}
+
+#why .why-info-card .why-info-card-title {
+  background: var(--color-green);
+  border-radius: 5px;
+}
+
+#why .why-info-card:nth-child(4) .why-info-card-title {
+  border: 2px solid var(--color-green)!important;
+  background: white!important;
+  color: var(--color-green);
+}
+
+#why .why-recommend-panel .why-feedback-card {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 7px;
+}
+
+#why .why-recommend-panel .why-feedback-card .why-feedback-card-comment {
+  height: 140px;
+}
+
+#why .why-recommend-panel .why-feedback-card .why-feedback-card-content {
+  background: #fdf4d8;
+  border-radius: 5px;
+}
+
+/* SendRoom */
+#sendroom hr {
+  border-color: var(--color-primary);
+  border-width: 3px;
+}
+
+#sendroom .phone-guide-panel .phone-guide-left-title {
+  background: var(--color-primary);
+}
+
+#sendroom .phone-guide-panel .phone-guide-left-comment {
+  background: #fdf4d8;
+}
+
+#sendroom .sendroom-tabs {
+  border: 2px solid #e6e6e6;
+}
+
+#sendroom .sendroom-tabs .sendroom-tab {
+  background: #e6e6e6;
+  color: black;
+  border: 1px solid white;
+}
+
+#sendroom .sendroom-tabs .sendroom-tab.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+#sendroom .sendroom-tabs .sendroom-tab:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+#sendroom .sendroom-form .sendroom-form-label.required:after {
+  content: "*";
+  color: var(--color-third);
+}
+
+#sendroom .sendroom-form .sendroom-form-input {
+  width: 100%;
+  height: 45px;
+  padding: 2px 15px;
+  margin: 5px 0px;
+  border: 2px solid #e6e6e6;
+}
+
+#sendroom .sendroom-form .sendroom-form-input:focus {
+  border-color: var(--color-third)!important;
+}
+
+#sendroom .sendroom-form .sendroom-form-textarea {
+  width: 100%;
+  padding: 2px 15px;
+  margin: 5px 0px;
+  border: 2px solid #e6e6e6;
+}
+
+#sendroom .sendroom-form .btn-sendroom-form-submit {
+  background: var(--color-third);
+  border-radius: 5px;
+}
+
+#sendroom .line-guide-panel {
+  background: #fdf4d8;
+}
+
+/* FAQ */
+
+#faq {
+  background: #fdf4d8;
+}
+
+#faq .faq-card {
+  background: white;
+  border-radius: 10px;
+}
+
+#faq .faq-card .faq-prefix-div {
+  width: 35px;
+  text-align: right;
+}
+
+#faq .faq-card .faq-prefix-div.question {
+  color: #00a0e9;
+}
+
+#faq .faq-card .faq-prefix-div.answer {
+  color: #ff0000;
+}
+
+#faq .faq-card .faq-content-div {
+  width: calc(100% - 35px);
+  padding-left: 20px;
+}
+
+/* Footer Component */
+
+#footer {
+  background: var(--color-primary);
 }

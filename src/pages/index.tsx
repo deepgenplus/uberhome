@@ -1,20 +1,21 @@
 import React from 'react';
 
 import About from '../components/About';
-import Analytics from '../components/Analytics';
 import Case from '../components/Case';
 import FAQ from '../components/FAQ';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
+import SendRoom from '../components/SendRoom';
 import Service from '../components/Service';
 import Why from '../components/Why';
 
 const App = () => {
   return (
-    <div className={`bg-background grid overflow-hidden`}>
+    <div className={`bg-background`}>
       <div className={`relative bg-background`}>
-        <div className={`relative z-10 bg-background lg:w-full`}>
+        <div className={`relative z-10 bg-background`}>
           <Header />
           <MainHero />
         </div>
@@ -34,7 +35,8 @@ const App = () => {
       <LazyShow>
         <FAQ />
       </LazyShow>
-      <Analytics />
+      <SendRoom />
+      <Footer />
     </div>
   );
 };

@@ -17,9 +17,7 @@ const Menu = () => {
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <a href="#">
-                <span className="text-3xl font-bold">
-                  <span>U</span>ber Home
-                </span>
+                <span className="text-2xl text-white">LINEで賃貸</span>
               </a>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button
@@ -45,12 +43,15 @@ const Menu = () => {
                   key={item.name}
                   to={item.href}
                   offset={-100}
-                  className="text-white cursor-pointer hover:no-underline"
+                  className={`text-white cursor-pointer hover:no-underline text-xl`}
                 >
                   {item.name}
                 </Link>
               ))}
-              <a href="#" className={`btn-send-room text-white px-5 py-2`}>
+              <a
+                href="#"
+                className={`btn-send-room text-white px-5 py-2 shadow-md`}
+              >
                 お部屋を送る
               </a>
             </div>
