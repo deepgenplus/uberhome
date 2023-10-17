@@ -1,125 +1,287 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
 import config from '../config/index.json';
+import ServiceItem from './ServiceItem';
 
 const Service = () => {
-  const { pricing } = config;
-  const { items, title } = pricing;
-  const [firstPlan, secondPlan, thirdPlan] = items;
+  const { services } = config;
+  const { records: serviceItems } = services;
+  const { texts: serviceTexts } = services;
 
   return (
-    <section className={`bg-background py-8`} id="pricing">
-      <div className={`container mx-auto px-2 pt-4 pb-12 text-primary`}>
-        <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
-        >
-          {title}
-        </h1>
-        <div className={`w-full mb-4`}>
-          <div
-            className={`h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t`}
-          ></div>
+    <div id="service" className={``}>
+      <div className={`container service-top  mx-auto`}>
+        <div className="">
+          <h2
+            className="font_2 wixui-rich-text__text"
+            style={{
+              lineHeight: 'normal',
+              fontSize: '20px',
+              marginTop: '63px',
+            }}
+          >
+            <span className="wixui-rich-text__text">
+              <span
+                style={{ fontWeight: 'bold' }}
+                className="wixui-rich-text__text"
+              >
+                <span
+                  style={{ color: '#c43735', fontSize: '46px' }}
+                  className="wixui-rich-text__text"
+                >
+                  <span className="wixui-rich-text__text">
+                    <span
+                      style={{ letterSpacing: '0.08em' }}
+                      className="wixui-rich-text__text"
+                    >
+                      S
+                    </span>
+                  </span>
+                </span>
+                <span
+                  style={{ color: '#324158' }}
+                  className="wixui-rich-text__text"
+                >
+                  <span
+                    style={{ fontSize: '46px' }}
+                    className="wixui-rich-text__text"
+                  >
+                    <span className="wixui-rich-text__text">
+                      <span
+                        style={{ letterSpacing: '0.08em' }}
+                        className="wixui-rich-text__text"
+                      >
+                        ervice
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span
+                  style={{ color: '#38404B' }}
+                  className="wixui-rich-text__text"
+                >
+                  <span className="wixui-rich-text__text">
+                    <span
+                      style={{ fontSize: '46px', letterSpacing: '0.08em' }}
+                      className="wixui-rich-text__text"
+                    >
+                      &nbsp;
+                    </span>
+                    <span
+                      style={{ fontSize: '14px', letterSpacing: '0.056em' }}
+                      className="wixui-rich-text__text"
+                    >
+                      サービス概要
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </h2>
         </div>
+        <div className={`bg-white py-10 sm:py-15`}>
+          {serviceItems.map((item, idx) => (
+            <ServiceItem
+              title={item.title}
+              description={item.description}
+              refs={item.ref}
+              imgPath={item.imagePath}
+              key={idx}
+            ></ServiceItem>
+          ))}
+        </div>
+      </div>
+      <div className={`bg-gray-100 p-5`}>
         <div
-          className={`flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4`}
+          className={` mx-auto`}
+          style={{ maxWidth: '980px', color: '#38404b' }}
         >
-          <div
-            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-background mt-4`}
+          <h2
+            className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-700 mb-3"
+            style={{ fontSize: '25px' }}
           >
-            <div
-              className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
-            >
-              <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
-                {firstPlan?.name}
-              </div>
-              <ul className={`w-full text-center text-sm`}>
-                {firstPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${firstPlan.name}-${feature}`}
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+            {serviceTexts.text1}
+          </h2>
+          <div
+            className={`mx-auto mb-10`}
+            // style={{ width: '284px', borderTop: '4px solid #000' }}
+          ></div>
+          <div className={`grid grid-cols-1 gap-y-16 lg:grid-cols-2 px-10`}>
+            <div className="flex flex-col gap-y-4">
+              <img src="service5.jpg" width={452} height={152}></img>
             </div>
             <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
+              className="flex flex-col gap-y-4 px-5"
+              style={{ fontSize: '19px', lineHeight: '1.5em' }}
             >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
-              >
-                {firstPlan?.price}
-                <span className={`text-base`}> {firstPlan?.priceDetails}</span>
-              </div>
+              <div>{serviceTexts.text2}</div>
+              <div>{serviceTexts.text3}</div>
             </div>
           </div>
-          <div
-            className={`flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-background mt-4 sm:-mt-6 shadow-lg z-10`}
-          >
-            <div
-              className={`flex-1 bg-background rounded-t rounded-b-none overflow-hidden shadow`}
-            >
-              <div className={`w-full p-8 text-3xl font-bold text-center`}>
-                {secondPlan?.name}
-              </div>
-              <div
-                className={`h-1 w-full bg-primary my-0 py-0 rounded-t`}
-              ></div>
-              <ul className={`w-full text-center text-base font-bold`}>
-                {secondPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${secondPlan?.name}-${feature}`}
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+          <div className={`mx-auto p-5`} style={{ fontSize: '18px' }}>
+            <div className={`bg-white p-5 my-5`} style={{ color: '#38404B' }}>
+              <p>{serviceTexts.text4}</p>
+              <p>{serviceTexts.text5}</p>
             </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div className={`w-full pt-6 text-4xl font-bold text-center`}>
-                {secondPlan?.price}
-                <span className={`text-base`}> {secondPlan?.priceDetails}</span>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-primary mt-4`}
-          >
-            <div
-              className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
-            >
-              <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
-                {thirdPlan?.name}
-              </div>
-              <ul className={`w-full text-center text-sm`}>
-                {thirdPlan?.features.map((feature) => (
-                  <li
-                    className={`border-b py-4`}
-                    key={`${thirdPlan?.name}-${feature}`}
-                  >
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div
-              className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
-            >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
-              >
-                {thirdPlan?.price}
-                <span className={`text-base`}> {thirdPlan?.priceDetails}</span>
-              </div>
+            <div className={`bg-white p-5 my-5 font-bold`}>
+              <p>{serviceTexts.text6}</p>
+              <p>{serviceTexts.text7}</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div
+        className={`grid grid-cols-1 gap-y-16 lg:grid-cols-2 bg-white`}
+        style={{ borderBottom: '5px solid #000' }}
+      >
+        <div className={`flex flex-col gap-y-4`}>
+          <img
+            src="1.jpg"
+            width={441}
+            height={793}
+            style={{
+              width: '856px',
+              height: '793px',
+              objectFit: 'cover',
+              objectPosition: '50% 50%',
+              visibility: 'visible',
+            }}
+          ></img>
+        </div>
+        <div
+          className={`flex flex-col gap-y-4 mx-auto`}
+          style={{ width: '519px', fontSize: '18px' }}
+        >
+          <div
+            id="comp-l9fux78n"
+            className="KcpHeO tz5f0K comp-l9fux78n wixui-rich-text"
+          >
+            <h3
+              className="font_5 wixui-rich-text__text"
+              style={{ fontSize: '46px' }}
+            >
+              <span
+                style={{ fontSize: '46px' }}
+                className="wixui-rich-text__text"
+              >
+                <span
+                  style={{ fontWeight: 'bold' }}
+                  className="wixui-rich-text__text font-bold"
+                >
+                  <span
+                    style={{ color: '#C43735' }}
+                    className="wixui-rich-text__text"
+                  >
+                    <span className="wixui-rich-text__text">T</span>
+                  </span>
+                  <span
+                    style={{ color: '#38404B' }}
+                    className="wixui-rich-text__text"
+                  >
+                    <span className="wixui-rich-text__text">o customers </span>
+                  </span>
+                </span>
+              </span>
+              <span
+                style={{ fontSize: '14px' }}
+                className="wixui-rich-text__text"
+              >
+                <span
+                  style={{ fontWeight: 'bold' }}
+                  className="wixui-rich-text__text"
+                >
+                  <span
+                    style={{ color: '#38404B' }}
+                    className="wixui-rich-text__text"
+                  >
+                    <span className="wixui-rich-text__text">お客様へ</span>
+                  </span>
+                </span>
+              </span>
+            </h3>
+          </div>
+          <div
+            id="comp-l9fux794"
+            className="service-text"
+            data-testid="richTextElement"
+          >
+            <p className="service-text__text" style={{ marginBottom: '30px' }}>
+              <span className="service-text__text font-bold">
+                <span
+                  style={{ fontSize: '18px' }}
+                  className="service-text__text"
+                >
+                  Uber Homeはお客様の引越しに伴う初期費用を最小限に抑えるため
+                </span>
+              </span>
+              <span className="service-text__text font-bold">
+                <span className="service-text__text">
+                  ご自身でお部屋を探していただくセルフ型の賃貸サービスです。
+                </span>
+              </span>
+            </p>
+
+            <p className="service-text__text">
+              <span className="service-text__text">
+                お客様の中には、「まずは不動産会社に行って相談したい」
+              </span>
+            </p>
+
+            <p className="service-text__text mb-5">
+              <span className="service-text__text">
+                そう思われるお客様にはご満足いただけないかもしれません。
+              </span>
+            </p>
+
+            <p className="service-text__text" style={{ marginBottom: '30px' }}>
+              <span className="service-text__text">
+                Uber Homeでは、今の時代に合った新しい形で賃貸サービスを
+              </span>
+              <span className="service-text__text">
+                <span className="service-text__text">提供して</span>
+              </span>
+              <span className="service-text__text">
+                いきたいと思っております。
+              </span>
+            </p>
+
+            <p className="service-text__text" style={{ marginBottom: '30px' }}>
+              <span className="service-text__text">
+                店舗コストの削減や、来店・接客を不要とした業務のシステム化を
+              </span>
+              <span className="service-text__text">
+                <span className="service-text__text">図る</span>
+              </span>
+              <span className="service-text__text">
+                ことで最大限の賃貸サービスをお客様に提供します。
+              </span>
+            </p>
+            <p className="service-text__text">
+              <span className="service-text__text">
+                お問い合わせいただいた全てのお客様により良い新生活がス
+              </span>
+              <span className="service-text__text">
+                タートできるよう精一杯サポートさせていただきます。
+              </span>
+            </p>
+
+            <p className="service-text-p">
+              <span className="service-text__text">
+                まずはご契約いただくまで料金は一切発生しませんので、お気軽に
+              </span>
+              <span className="service-text__text">
+                <span className="service-text__text">
+                  <span className="service-text__text">
+                    <span>Uber Homeをお試しください。</span>
+                  </span>
+                </span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
