@@ -4,8 +4,7 @@ import config from '../config/index.json';
 import AboutStep from './AboutStep';
 
 const About = () => {
-  const { company, about } = config;
-  const { name: companyName } = company;
+  const { about } = config;
   const { steps } = about;
 
   return (
