@@ -5,7 +5,7 @@
 
 :root {
   --color-primary: #00a0e9;
-  --color-secondary: #fd7622;
+  --color-skin: #fdf4d8;
   --color-tertiaty: #99a0a3;
   --color-green: #1dc245;
   --color-third: #c43735;
@@ -25,6 +25,14 @@ body {
 
 .bg-color-primary {
   background-color: var(--color-primary);
+}
+
+.bg-color-green {
+  background-color: var(--color-green);
+}
+
+.bg-color-skin {
+  background-color: var(--color-skin);
 }
 
 .shine {
@@ -83,6 +91,13 @@ body {
   font-size: 18px;
   background-color: var(--color-green);
   border-radius: 100px;
+}
+
+.topbar .hover-header-menu-item:nth-of-type(odd) {
+  background-image: url(/bg_menu_item.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-hero {
@@ -195,7 +210,7 @@ body {
 /* Case Component */
 
 #case {
-  background: #FDF4D8;
+  background: var(--color-skin);
 }
 
 #case .case-container .case-title-div{
@@ -302,7 +317,7 @@ p.service-text__text {
 }
 
 #why .why-recommend-panel .why-feedback-card .why-feedback-card-content {
-  background: #fdf4d8;
+  background: var(--color-skin);
   border-radius: 5px;
 }
 
@@ -317,7 +332,7 @@ p.service-text__text {
 }
 
 #sendroom .phone-guide-panel .phone-guide-left-comment {
-  background: #fdf4d8;
+  background: var(--color-skin);
 }
 
 #sendroom .sendroom-tabs {
@@ -370,13 +385,13 @@ p.service-text__text {
 }
 
 #sendroom .line-guide-panel {
-  background: #fdf4d8;
+  background: var(--color-skin);
 }
 
 /* FAQ */
 
 #faq {
-  background: #fdf4d8;
+  background: var(--color-skin);
 }
 
 #faq .faq-card {

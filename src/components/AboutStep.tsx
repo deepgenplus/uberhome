@@ -8,7 +8,7 @@ type AboutStepProps = {
 
 const AboutStep: React.FC<AboutStepProps> = ({ title, content, img }) => {
   return (
-    <div className={`about-step-card lg:mx-0 md:mx-auto`}>
+    <div className={`about-step-card lg:mx-0 mx-auto`}>
       <div className="about-step-card-img">
         <img src={img} alt="img" className="mx-auto py-3" />
       </div>

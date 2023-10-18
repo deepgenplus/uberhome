@@ -6,23 +6,28 @@
   "navigation": [
     {
       "name": "About",
+      "mobile_name": "LINEで賃貸とは",
       "href": "about"
     },
     {
       "name": "Case",
+      "mobile_name": "初期費用の例",
       "href": "case"
     },
 
     {
       "name": "Why",
+      "mobile_name": "仲介手数料が0円の理由",
       "href": "why"
     },
     {
       "name": "Service",
+      "mobile_name": "サービス概要",
       "href": "service"
     },
     {
       "name": "FAQ",
+      "mobile_name": "よくある質問",
       "href": "faq"
     }
   ],
