@@ -30,9 +30,9 @@ const Menu = () => {
                 spy={true}
                 active="active"
                 smooth={true}
-                duration={1000}
+                duration={100}
                 to={item.href}
-                offset={-100}
+                offset={-50}
                 className={`text-white cursor-pointer hover:no-underline text-xl`}
               >
                 {item.name}
@@ -63,27 +63,26 @@ const Menu = () => {
           <div className={`text-left text-white px-5 py-5 text-2xl`}>{name}</div>
           <ul className={`text-white`}>
             {navigation.map((item) => (
-              <li className='hover:text-gray-500 flex items-center p-5 justify-center hover-header-menu-item' key={item.name}>
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  to={item.href}
-                  offset={-100}
-                  onClick={handleNav}
-                  className={`cursor-pointer hover:no-underline text-xl font-bold`}
-                >
-                  {item.mobile_name}
-                </Link>
-              </li>
+              <Link
+                spy={true}
+                active="active"
+                smooth={true}
+                duration={100}
+                to={item.href}
+                offset={-50}
+                className={`cursor-pointer hover:no-underline text-xl font-bold`}
+              >
+                <li className='hover:text-gray-500 flex items-center p-5 justify-center hover-header-menu-item' key={item.name} onClick={handleNav}>
+                    {item.mobile_name}
+                </li>
+              </Link>
             ))}
             <li className={`items-center p-5 justify-center`}>
               <a href='/'>
                 <button className={`bg-color-green font-bold text-2xl rounded-full shine shadow-md px-6 py-3`}>{mainHero.sendBtnTitle}</button>
               </a>
             </li>
-            <li className={`items-center px-7 justify-center text-black md:`}>
+            <li className={`items-center px-7 justify-center text-black md:`} onClick={handleNav}>
               <div className={`text-xl px-8 py-4 shadow-md rounded-lg bg-color-skin flex flex-col gap-y-5 w-full`}>
                 <div className={`flex sm:gap-x-12 gap-x-3`}>
                   <div className='text-right w-2/5'>対応時間</div>

@@ -24,9 +24,9 @@ const About = () => {
         </div>
       </div>
       <div className={`font-bold text-black py-6`}>
-        <div className={`text-4xl`}>LINEで賃貸</div>
+        <div className={`md:text-[40px] sm:text-[34px] text-[28px]`}>LINEで賃貸</div>
         <div
-          className={`about-content text-3xl mt-2 mx-auto px-10 2xl:w-3/5 xl:w-2/3 lg:w-3/4 w-full`}
+          className={`about-content md:text-[30px] sm:text-[24px] text-[20px] mt-2 mx-auto px-10 2xl:w-3/5 xl:w-2/3 lg:w-3/4 w-full text-justify md:leading-[50px] sm:leading-[40px] leading-[30px]`}
         >
           <span>
             LINEで賃貸はお客様ご自身で、物件サイトからお気に入りのお部屋を探していただくことにより、仲介手数料を
@@ -44,6 +44,7 @@ const About = () => {
       >
         {steps.map((step, index) => (
           <AboutStep
+            index={index+1}
             title={step.title}
             content={step.content}
             img={step.img}
