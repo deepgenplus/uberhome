@@ -21,18 +21,18 @@ const SendRoom = () => {
   const [property1, setProperty1] = useState('');
   const [property2, setProperty2] = useState('');
   const [property3, setProperty3] = useState('');
-  const [bmedsmd, setBmedsmd] = useState('いますぐ');
+  // const [bmedsmd, setBmedsmd] = useState('いますぐ');
   const [errors, setErrors] = useState({
     property1: '',
     property2: '',
     property3: '',
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     // Validate form fields
-    const validationErrors = { property1: '' };
+    const validationErrors = { property1: '',property2: '',property3: '', };
     if (!property1) {
       validationErrors.property1 = '物件1は必須';
     }
@@ -171,7 +171,7 @@ const SendRoom = () => {
                         type="radio"
                         value="いますぐ"
                         name="bmedsmd"
-                        onChange={(e) => setBmedsmd(e.target.value)}
+                        // onChange={(e) => setBmedsmd(e.target.value)}
                       />
                       <span className={`text-md ml-5`}>いますぐ</span>
                     </label>
@@ -180,7 +180,7 @@ const SendRoom = () => {
                         type="radio"
                         value="1ヶ月以内"
                         name="bmedsmd"
-                        onChange={(e) => setBmedsmd(e.target.value)}
+                        // onChange={(e) => setBmedsmd(e.target.value)}
                       />
                       <span className={`text-md ml-5`}>1ヶ月以内</span>
                     </label>
@@ -189,7 +189,7 @@ const SendRoom = () => {
                         type="radio"
                         value="2ヶ月以内"
                         name="bmedsmd"
-                        onChange={(e) => setBmedsmd(e.target.value)}
+                        // onChange={(e) => setBmedsmd(e.target.value)}
                       />
                       <span className={`text-md ml-5`}>2ヶ月以内</span>
                     </label>
