@@ -1,5 +1,11 @@
-import config from '../config/index.json';
+import Slider, { Settings } from 'react-slick';
 import WhyFeedback from './WhyFeedback';
+import CustomPrevArrow from './CustomPrevArrow';
+import CustomNextArrow from './CustomNextArrow';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import config from '../config/index.json';
 
 const Why = () => {
   const { why, company } = config;
@@ -13,6 +19,28 @@ const Why = () => {
     recommendTitle,
     feedbacks,
   } = why;
+
+  const sliderSettings = {
+    className: "center",
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    adaptiveHeight: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ],
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+  };
+
   return (
     <div className={`py-12 text-black bg-color-grey`} id="why">
       <div
@@ -196,8 +224,20 @@ const Why = () => {
               {recommendTitle}
             </span>
           </div>
-          <div className={`w-full grid sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10 mt-10`}>
-            {feedbacks.map((feedback, index) => (
+          {/* <div className={`w-full grid sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10 mt-10`}> */}
+          <div className={`w-full mx-auto mt-10`}>
+            <Slider {...sliderSettings}>
+              {feedbacks.map((feedback, index) => (
+                <WhyFeedback
+                  key={index}
+                  img={feedback.img}
+                  comment={feedback.comment}
+                  content={feedback.content}
+                  bottomTip={feedback.bottomTip}
+                ></WhyFeedback>
+              ))}
+            </Slider>
+            {/* {feedbacks.map((feedback, index) => (
               <WhyFeedback
                 key={index}
                 img={feedback.img}
@@ -205,7 +245,7 @@ const Why = () => {
                 content={feedback.content}
                 bottomTip={feedback.bottomTip}
               ></WhyFeedback>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
