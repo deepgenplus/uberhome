@@ -191,7 +191,7 @@
       "leftImgTitle": "お客様",
       "rightImg": "why_card_man.png",
       "rightImgTitle": "オーナー様",
-      "bottomTitle": "仲介手数料 <span class='text-6xl text-color-third'>0</span> 円"
+      "bottomTitle": "仲介手数料 <span class='text-4xl text-color-third'>0</span> 円"
     },
     "whyInfoCard2": {
       "title": "オーナー様から広告料がない場合",
@@ -199,11 +199,11 @@
       "leftImgTitle": "お客様",
       "rightImg": "why_card_man.png",
       "rightImgTitle": "オーナー様",
-      "bottomTitle": "仲介手数料 <span class='text-6xl text-color-third'>2,5</span> 万円",
+      "bottomTitle": "仲介手数料 <span class='text-4xl text-color-third'>2,5</span> 万円",
       "bottomTitleTopTip": "(税込)"
     },
     "arrowImg": "why_card_arrow.png",
-    "secondComment": "LINEで賃貸はお客様に無駄な費用をいただくことなく気に入ったお部屋に入居いただくことを最優先としています。<br>サイトコンセプトを崩さないようLINEで賃貸だけが得をするようなお部屋に誘導をしません。<br>その為<span class='text-color-third font-bold'>ご自身でお部屋を探された分</span>、お客様に低コストな初期費用でご満足いただける賃貸サービスを提供させていただきます。",
+    "secondComment": "LINEで賃貸はお客様に無駄な費用をいただくことなく気に入ったお部屋に入居いただくことを最優先としています。<br>サイトコンセプトを崩さないようLINEで賃貸だけが得をするようなお部屋に誘導をしません。<br>その為<span class='text-color-primary font-bold'>ご自身でお部屋を探された分</span>、お客様に低コストな初期費用でご満足いただける賃貸サービスを提供させていただきます。",
     "recommendTitle": "こんな方にオススメ",
     "feedbacks": [
       {

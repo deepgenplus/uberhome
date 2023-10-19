@@ -2,7 +2,7 @@ import config from '../config/index.json';
 import WhyFeedback from './WhyFeedback';
 
 const Why = () => {
-  const { why } = config;
+  const { why, company } = config;
   const {
     title,
     firstComment,
@@ -14,7 +14,7 @@ const Why = () => {
     feedbacks,
   } = why;
   return (
-    <div className={`py-12 text-white`} id="why">
+    <div className={`py-12 text-black bg-color-grey`} id="why">
       <div
         className={`why-container mx-auto px-5 2xl:w-3/5 xl:w-2/3 lg:w-3/4 w-full`}
       >
@@ -34,15 +34,11 @@ const Why = () => {
             dangerouslySetInnerHTML={{ __html: firstComment }}
           ></div>
         </div>
-        <div className={`why-info-card pt-5 text-black mb-12`}>
-          <div className={`text-center pt-7`}>
-            <span
-              className={`why-info-card-title py-2 px-5 text-2xl font-bold text-white`}
-            >
+        <div className={`why-info-card shadow-md mb-12`}>
+          <div className={`why-info-card-title rounded-t-[10px] py-3 md:text-[26px] sm:text-[22px] text-[18px]`}>
               {whyInfoCard1.title}
-            </span>
           </div>
-          <div className="py-10">
+          <div className="sm:block hidden py-10 px-2">
             <div className={`flex justify-center items-center gap-x-5`}>
               <div>
                 <img
@@ -50,7 +46,7 @@ const Why = () => {
                   src={whyInfoCard1.leftImg}
                   alt={whyInfoCard1.leftImgTitle}
                 />
-                <div className={`text-center text-2xl font-bold`}>
+                <div className={`text-center text-[22px] font-bold`}>
                   {whyInfoCard1.leftImgTitle}
                 </div>
               </div>
@@ -59,59 +55,82 @@ const Why = () => {
                 className={`opacity-20 rotate-180`}
                 alt="RightArrow"
               />
-              <div className={`flex flex-col text-center`}>
-                <span className={`font-bold text-5xl tracking-tighter`}>
-                  LINEで
-                </span>
-                <span className={`font-bold text-4xl tracking-widest -mt-4`}>
-                  賃貸
-                </span>
-              </div>
+
+              <img src="logo_sm.png" alt={company.name} width="136" />
+
               <img src={arrowImg} alt="LeftArrow" />
               <div>
                 <img
                   src={whyInfoCard1.rightImg}
                   alt={whyInfoCard1.rightImgTitle}
                 />
-                <div className={`text-center text-2xl font-bold`}>
+                <div className={`text-center text-[22px] font-bold`}>
                   {whyInfoCard1.rightImgTitle}
                 </div>
               </div>
             </div>
             <div
-              className={`text-center text-2xl font-bold -mt-5`}
+              className={`text-center text-2xl font-bold`}
+              dangerouslySetInnerHTML={{ __html: whyInfoCard1.bottomTitle }}
+            ></div>
+          </div>
+          <div className={`sm:hidden py-10`}>
+            <div className={`flex justify-between px-6`}>
+              <div className={`w-24`}>
+                <img
+                  className={`opacity-50`}
+                  src={whyInfoCard1.leftImg}
+                  alt={whyInfoCard1.leftImgTitle}
+                />
+                <div className={`text-center text-[14px] font-bold mt-1`}>
+                  {whyInfoCard1.leftImgTitle}
+                </div>
+              </div>
+              <div className={`w-24`}>
+                <img
+                  src={whyInfoCard1.rightImg}
+                  alt={whyInfoCard1.rightImgTitle}
+                />
+                <div className={`text-center text-[14px] font-bold mt-1`}>
+                  {whyInfoCard1.rightImgTitle}
+                </div>
+              </div>
+            </div>
+            <div className={`flex justify-between`}>
+              <div className={`w-20`}></div>
+              <img src={arrowImg} alt="RightArrow" className={`opacity-20   rotate-[-135deg]`} width="40" />
+              <div></div>
+              <img src={arrowImg} alt="LeftArrow" className={`-rotate-45`} width="40" />
+              <div className={`w-20`}></div>
+            </div>
+            <div className={`flex justify-center mt-4`}>
+              <img src="logo.png" alt={company.name} width="160" />
+            </div>
+            <div
+              className={`text-center text-xl font-bold mt-4`}
               dangerouslySetInnerHTML={{ __html: whyInfoCard1.bottomTitle }}
             ></div>
           </div>
         </div>
-        <div className={`why-info-card pt-5 text-black mb-10`}>
-          <div className={`text-center pt-7`}>
-            <span
-              className={`why-info-card-title py-2 px-5 text-2xl font-bold text-white`}
-            >
+        <div className={`why-info-card shadow-md mb-10`}>
+          <div className={`why-info-card-title text-center bg-color-primary text-white font-bold rounded-t-[10px] py-3 md:text-[26px] sm:text-[22px] text-[18px]`}>
               {whyInfoCard2.title}
-            </span>
           </div>
-          <div className="py-10">
+          <div className={`sm:block hidden py-10 px-2`}>
             <div className={`flex justify-center items-center gap-x-5`}>
               <div>
                 <img
                   src={whyInfoCard2.leftImg}
                   alt={whyInfoCard2.leftImgTitle}
                 />
-                <div className={`text-center text-2xl font-bold`}>
+                <div className={`text-center text-[22px] font-bold`}>
                   {whyInfoCard2.leftImgTitle}
                 </div>
               </div>
               <img src={arrowImg} alt="RightArrow" className={`rotate-180`} />
-              <div className={`flex flex-col text-5xl text-center`}>
-                <span className={`font-bold text-5xl tracking-tighter`}>
-                  LINEで
-                </span>
-                <span className={`font-bold text-4xl tracking-widest -mt-4`}>
-                  賃貸
-                </span>
-              </div>
+
+              <img src="logo_sm.png" alt={company.name} width="136" />
+              
               <img src={arrowImg} className={`opacity-20`} alt="LeftArrow" />
               <div>
                 <img
@@ -119,28 +138,65 @@ const Why = () => {
                   src={whyInfoCard2.rightImg}
                   alt={whyInfoCard2.rightImgTitle}
                 />
-                <div className={`text-center text-2xl font-bold`}>
+                <div className={`text-center text-[22px] font-bold`}>
                   {whyInfoCard2.rightImgTitle}
                 </div>
               </div>
             </div>
             <div
-              className={`text-center text-2xl font-bold -mt-5`}
+              className={`text-center text-2xl font-bold`}
+              dangerouslySetInnerHTML={{ __html: whyInfoCard2.bottomTitle }}
+            ></div>
+          </div>
+          <div className={`sm:hidden py-10`}>
+            <div className={`flex justify-between px-6`}>
+              <div className={`w-24`}>
+                <img
+                  src={whyInfoCard2.leftImg}
+                  alt={whyInfoCard2.leftImgTitle}
+                />
+                <div className={`text-center text-[14px] font-bold mt-1`}>
+                  {whyInfoCard2.leftImgTitle}
+                </div>
+              </div>
+              <div className={`w-24`}>
+                <img
+                  className={`opacity-50`}
+                  src={whyInfoCard2.rightImg}
+                  alt={whyInfoCard2.rightImgTitle}
+                />
+                <div className={`text-center text-[14px] font-bold mt-1`}>
+                  {whyInfoCard2.rightImgTitle}
+                </div>
+              </div>
+            </div>
+            <div className={`flex justify-between`}>
+              <div className={`w-20`}></div>
+              <img src={arrowImg} alt="RightArrow" className={`rotate-[-135deg]`} width="40" />
+              <div></div>
+              <img src={arrowImg} alt="LeftArrow" className={`opacity-20 -rotate-45`} width="40" />
+              <div className={`w-20`}></div>
+            </div>
+            <div className={`flex justify-center mt-4`}>
+              <img src="logo.png" alt={company.name} width="160" />
+            </div>
+            <div
+              className={`text-center text-xl font-bold mt-4`}
               dangerouslySetInnerHTML={{ __html: whyInfoCard2.bottomTitle }}
             ></div>
           </div>
         </div>
         <div
-          className={`text-justify text-lg`}
+          className={`text-justify text-lg leading-8`}
           dangerouslySetInnerHTML={{ __html: secondComment }}
         ></div>
         <div className={`why-recommend-panel mt-12`}>
           <div className={`text-2xl text-center`}>
-            <span className={`border-b-2 border-white font-bold px-4 py-2`}>
+            <span className={`border-b-2 border-black font-bold px-4 py-2`}>
               {recommendTitle}
             </span>
           </div>
-          <div className={`w-full grid grid-cols-2 gap-x-5 gap-y-10 mt-10`}>
+          <div className={`w-full grid sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-10 mt-10`}>
             {feedbacks.map((feedback, index) => (
               <WhyFeedback
                 key={index}
