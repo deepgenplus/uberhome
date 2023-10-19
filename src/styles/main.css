@@ -5,10 +5,14 @@
 
 :root {
   --color-primary: #00a0e9;
-  --color-secondary: #fd7622;
+  --color-skin: #fdf4d8;
   --color-tertiaty: #99a0a3;
   --color-green: #1dc245;
   --color-third: #c43735;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,11 +31,18 @@ body {
   background-color: var(--color-primary);
 }
 
+.bg-color-green {
+  background-color: var(--color-green);
+}
+
+.bg-color-skin {
+  background-color: var(--color-skin);
+}
+
 .shine {
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
-  z-index: 10;
 }
 
 .shine::before {
@@ -79,10 +90,11 @@ body {
   text-decoration: none;
 }
 
-.topbar nav .btn-send-room {
-  font-size: 18px;
-  background-color: var(--color-green);
-  border-radius: 100px;
+.topbar a:nth-of-type(odd) .hover-header-menu-item {
+  background-image: url(/bg_menu_item.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-hero {
@@ -97,17 +109,10 @@ body {
 }
 
 .cta-panel {
-  max-width: 732px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.cta-panel .tag-img {
-  position: absolute;
-  top: -30px;
-  right: -30px;
 }
 
 .cta-panel .cta-main-panel {
@@ -134,11 +139,6 @@ body {
   background: #f2f9fc;
 }
 
-#about .about-content {
-  line-height: 48px;
-  text-align: justify;
-}
-
 .about-step-card {
   width: 300px;
   height: 430px;
@@ -162,11 +162,11 @@ body {
   position: relative;
 }
 
-.about-step-card:not(:last-child) .about-step-card-title::after {
+/* .about-step-card:not(:last-child) .about-step-card-title::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: -12px; /* Adjust the distance from the right side as needed */
+  right: -12px; 
   transform: translateY(-50%);
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
@@ -178,13 +178,13 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  left: -5px; /* Adjust the distance from the right side as needed */
+  left: -5px; 
   transform: translateY(-50%);
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
   border-left: 11px solid #f2f9fc;
   z-index: 9;
-}
+} */
 
 .about-step-card .about-step-card-content {
   width: 100%;
@@ -195,16 +195,12 @@ body {
 /* Case Component */
 
 #case {
-  background: #FDF4D8;
+  background: var(--color-skin);
 }
 
-#case .case-container .case-title-div{
-  max-width: 600px;
-}
-
-#case .case-container .case-compare-table {
+/* #case .case-container .case-compare-table {
   width: 465px;
-}
+} */
 
 #case .case-container .case-compare-table table {
   border-spacing: 10px;
@@ -302,7 +298,7 @@ p.service-text__text {
 }
 
 #why .why-recommend-panel .why-feedback-card .why-feedback-card-content {
-  background: #fdf4d8;
+  background: var(--color-skin);
   border-radius: 5px;
 }
 
@@ -317,7 +313,7 @@ p.service-text__text {
 }
 
 #sendroom .phone-guide-panel .phone-guide-left-comment {
-  background: #fdf4d8;
+  background: var(--color-skin);
 }
 
 #sendroom .sendroom-tabs {
@@ -370,13 +366,13 @@ p.service-text__text {
 }
 
 #sendroom .line-guide-panel {
-  background: #fdf4d8;
+  background: var(--color-skin);
 }
 
 /* FAQ */
 
 #faq {
-  background: #fdf4d8;
+  background: var(--color-skin);
 }
 
 #faq .faq-card {

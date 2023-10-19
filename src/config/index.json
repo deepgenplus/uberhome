@@ -6,23 +6,28 @@
   "navigation": [
     {
       "name": "About",
+      "mobile_name": "LINEで賃貸とは",
       "href": "about"
     },
     {
       "name": "Case",
+      "mobile_name": "初期費用の例",
       "href": "case"
     },
 
     {
       "name": "Why",
+      "mobile_name": "仲介手数料が0円の理由",
       "href": "why"
     },
     {
       "name": "Service",
+      "mobile_name": "サービス概要",
       "href": "service"
     },
     {
       "name": "FAQ",
+      "mobile_name": "よくある質問",
       "href": "faq"
     }
   ],
@@ -64,29 +69,31 @@
     ]
   },
   "cases": {
-    "title": "初期費用を最小限に抑えてお届け。",
+    "title": "<span class='text-color-primary'>初期費用</span>を<span class='text-color-primary'>最小限</span>に抑えてお届け。",
     "subtitle1": "サービス手数料や別名目を上乗せすることは一切ありません。<br>その他、仲介会社独自でご紹介しているオプションサービス*の上乗せもありません。",
     "subtitle2": "*管理会社指定のオプションサービスの場合は実費料金が発生します。",
     "firstCompare": {
       "title": "​家賃8万円、敷金・礼金・仲介手数料が1ヶ月の場合",
+      "title_img": "case_compare_title_1.png",
+      "title_img_sm": "case_compare_title_1_sm.png",
       "table1": {
         "title": "一般的な初期費用",
         "rows": [
           {
             "key": "前家賃",
-            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
           },
           {
             "key": "敷金",
-            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
           },
           {
             "key": "礼金",
-            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
           },
           {
             "key": "仲介手数料",
-            "value": "<span class='text-3xl font-bold'>88,000</span> <span class='font-bold'>円</span>"
+            "value": "<span class='text-2xl font-bold'>88,000</span> <span class='font-bold'>円</span>"
           }
         ]
       },
@@ -95,19 +102,19 @@
         "rows": [
           {
             "key": "前家賃",
-            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
           },
           {
             "key": "敷金",
-            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
           },
           {
             "key": "礼金",
-            "value": "<span class='text-3xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
+            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
           },
           {
             "key": "仲介手数料",
-            "value": "<span class='text-3xl font-bold text-color-third'>0</span> <span class='font-bold text-color-third'>円</span>"
+            "value": "<span class='text-4xl font-bold text-color-third'>0</span> <span class='font-bold text-color-third'>円</span>"
           }
         ]
       },
@@ -122,6 +129,7 @@
     },
     "secondCompare": {
       "title": "賃貸ポータルサイトの場合",
+      "title_img": "case_compare_title_2.png",
       "table1": {
         "title": "一般的な初期費用",
         "rows": [
@@ -152,15 +160,15 @@
           },
           {
             "key": "ー別名目の費用",
-            "value": "<span class='text-2xl font-bold'>ない<br>です</span>"
+            "value": "<span class='text-2xl font-bold'>ないです</span>"
           },
           {
             "key": "おとり物件",
-            "value": "<span class='text-2xl font-bold'>ない<br>です</span>"
+            "value": "<span class='text-2xl font-bold'>ないです</span>"
           },
           {
             "key": "ご紹介方法",
-            "value": "<span class='text-2xl font-bold'>物件情報を送るだけ</span>"
+            "value": "<span class='text-xl font-bold'>物件情報を送るだけ</span>"
           }
         ]
       },

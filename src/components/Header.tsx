@@ -1,117 +1,112 @@
-import React, { Fragment } from 'react';
-
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import React, { useState, Fragment } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from 'react-scroll';
 
 import config from '../config/index.json';
 
 const Menu = () => {
-  const { navigation, company, callToAction } = config;
-  const { name: logo } = company;
+  const [nav, setNav] = useState(false);
+  const { navigation, company, mainHero } = config;
+  const { name } = company;
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
   return (
-    <div className="fixed top-0 w-full z-50">
-      <Popover>
-        <div className="topbar flex justify-between items-center relative py-3 px-4 sm:px-6 lg:px-8 shadow-md">
-          <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-            <div className="flex items-center justify-between w-full md:w-auto">
-              <a href="#">
-                <span className="text-2xl text-white">LINEで賃貸</span>
-              </a>
-              <div className="-mr-2 flex items-center md:hidden">
-                <Popover.Button
-                  className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
-                >
-                  <span className="sr-only">Open main menu</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                </Popover.Button>
-              </div>
-            </div>
-          </div>
-          <nav
-            className="relative flex items-center justify-between sm:h-10 lg:justify-start"
-            aria-label="Global"
-          >
-            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-5">
-              {navigation.map((item) => (
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  key={item.name}
-                  to={item.href}
-                  offset={-100}
-                  className={`text-white cursor-pointer hover:no-underline text-xl`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <a
-                href="#"
-                className={`btn-send-room text-white px-5 py-2 shadow-md`}
+    <div
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 z-50"
+    >
+      <div className="topbar m-auto flex justify-between items-center p-4 shadow-md">
+        <Link to="/">
+          <h1 className="text-2xl text-white">
+            {name}
+          </h1>
+        </Link>
+        <ul className="hidden md:flex">
+          {navigation.map((item) => (
+            <li className='px-4 flex items-center' key={item.name}>
+              <Link
+                spy={true}
+                active="active"
+                smooth={true}
+                duration={100}
+                to={item.href}
+                offset={-50}
+                className={`text-white cursor-pointer hover:no-underline text-xl`}
               >
-                お部屋を送る
-              </a>
-            </div>
-          </nav>
-        </div>
-
-        <Transition
-          as={Fragment}
-          enter="duration-150 ease-out"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="duration-100 ease-in"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          <Popover.Panel
-            focus
-            className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-          >
-            <div
-              className={`rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden`}
+                {item.name}
+              </Link>
+            </li>
+          ))}
+          <li className='px-4'>
+            <button
+              className={`bg-color-green rounded-full text-white px-5 py-2 shine shadow-md`}
             >
-              <div className="px-5 pt-4 flex items-center justify-between">
-                <div>
-                  <img className="h-8 w-auto" src={logo} alt="" />
-                </div>
-                <div className="-mr-2">
-                  <Popover.Button
-                    className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
-                  >
-                    <span className="sr-only">Close main menu</span>
-                    <XIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
-                </div>
-              </div>
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
-                  <Link
-                    spy={true}
-                    active="active"
-                    smooth={true}
-                    duration={1000}
-                    key={item.name}
-                    to={item.href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-              <a
-                href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center text-primary bg-gray-50 hover:bg-gray-100`}
+              お部屋を送る
+            </button>
+          </li>
+        </ul>
+
+        {/* Mobile Button */}
+        <div onClick={handleNav} className="block md:hidden z-10">
+          {nav ? (
+            <AiOutlineClose size={20} className={`text-white`} />
+          ) : (
+            <AiOutlineMenu size={20} className={`text-white`} />
+          )}
+        </div>
+        {/* Mobile Menu */}
+        <div
+          className={"md:hidden absolute left-0 right-0 bottom-0 justify-center items-center w-full h-screen bg-color-primary text-center ease-in duration-500 pb-10 " + (nav ? "top-0 overflow-auto" : "top-[-100vh] overflow-hidden")}
+        >
+          <div className={`text-left text-white px-5 py-5 text-2xl`}>{name}</div>
+          <ul className={`text-white`}>
+            {navigation.map((item) => (
+              <Link
+                spy={true}
+                active="active"
+                smooth={true}
+                duration={100}
+                to={item.href}
+                offset={-50}
+                key={item.name}
+                className={`cursor-pointer hover:no-underline text-xl font-bold`}
               >
-                {callToAction.text}
+                <li className='hover:text-gray-500 flex items-center p-5 justify-center hover-header-menu-item' onClick={handleNav}>
+                    {item.mobile_name}
+                </li>
+              </Link>
+            ))}
+            <li className={`items-center p-5 justify-center`}>
+              <a href='/'>
+                <button className={`bg-color-green font-bold text-2xl rounded-full shine shadow-md px-6 py-3`}>{mainHero.sendBtnTitle}</button>
               </a>
-            </div>
-          </Popover.Panel>
-        </Transition>
-      </Popover>
+            </li>
+            <li className={`items-center px-7 justify-center text-black md:`} onClick={handleNav}>
+              <div className={`text-xl px-8 py-4 shadow-md rounded-lg bg-color-skin flex flex-col gap-y-5 w-full`}>
+                <div className={`flex sm:gap-x-12 gap-x-3`}>
+                  <div className='text-right w-2/5'>対応時間</div>
+                  <div className='text-left w-3/5 font-bold'>10:00〜19:00</div>
+                </div>
+                <div className={`flex sm:gap-x-12 gap-x-3`}>
+                  <div className='text-right w-2/5'>営業日</div>
+                  <div className='text-left w-3/5 font-bold'>水曜定休</div>
+                </div>
+              </div>
+            </li>
+            <li className={`items-center p-3 pt-5`}>
+              <a className={`text-xl cursor-pointer border-b-2 border-white`} href='/terms'>​利用規約</a>
+            </li>
+            <li className={`items-center p-3`}>
+              <a className={`text-xl cursor-pointer border-b-2 border-white`} href='/privacypolicy'>​プライバシーポリシー​</a>
+            </li>
+            <li className={`items-center p-3`}>
+              <a className={`text-xl cursor-pointer border-b-2 border-white`} href='/brokerage-fee'>​仲介手数料について</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
