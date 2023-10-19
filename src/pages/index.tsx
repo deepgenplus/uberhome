@@ -35,8 +35,8 @@ const App = () => {
       <LazyShow>
         <FAQ />
       </LazyShow>
-      {/* <SendRoom />
-      <Footer /> */}
+      <SendRoom />
+      {/* <Footer /> */}
     </div>
   );
 };

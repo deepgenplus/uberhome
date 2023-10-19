@@ -342,14 +342,6 @@ p.service-text__text {
   border-width: 3px;
 }
 
-#sendroom .phone-guide-panel .phone-guide-left-title {
-  background: var(--color-primary);
-}
-
-#sendroom .phone-guide-panel .phone-guide-left-comment {
-  background: var(--color-skin);
-}
-
 #sendroom .sendroom-tabs {
   border: 2px solid #e6e6e6;
 }
