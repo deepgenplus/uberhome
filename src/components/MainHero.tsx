@@ -6,7 +6,7 @@ const MainHero = () => {
   const { mainHero } = config;
   return (
     <>
-      <div className={`main-hero mt-16`}>
+      <div className={`main-hero mt-12`}>
         <img src="hero.jpg" className="hero-background" alt="hero" />
         <div className={`cta-panel absolute`}>
           <div className={`cta-main-panel md:w-[732px] sm:w-[500px] w-[265px] items-center flex`}>
