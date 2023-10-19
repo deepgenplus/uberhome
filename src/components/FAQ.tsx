@@ -17,7 +17,7 @@ const FAQ = () => {
           </span>
           <span className={`ml-4`}>よくある質問</span>
         </div>
-        <div className={`faq-list-div gap-y-10 flex flex-col mt-12`}>
+        <div className={`faq-list-div sm:gap-y-10 gap-y-5 flex flex-col mt-12`}>
           {contents.map((content, index) => (
             <QuestionAnswerPair
               key={index}

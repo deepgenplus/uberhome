@@ -17,7 +17,7 @@ const Menu = () => {
     <div
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300 z-50"
     >
-      <div className="topbar m-auto flex justify-between items-center p-4 shadow-md">
+      <div className="topbar m-auto flex justify-between items-center px-4 py-2 shadow-md">
         <Link to="/">
           <h1 className="text-2xl text-white">
             {name}

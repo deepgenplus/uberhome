@@ -326,6 +326,16 @@ p.service-text__text {
   right: 0px;
 }
 
+/* Service Component */
+
+#service .service-summary {
+  background: repeating-linear-gradient(45deg, #FFF8E3, #FFF8E3 1px, #FFEEBA 0, #FFEEBA 6px);
+}
+
+#service .service-comments {
+  background-color: #f4f4f4;
+}
+
 /* SendRoom */
 #sendroom hr {
   border-color: var(--color-primary);
@@ -405,7 +415,7 @@ p.service-text__text {
 }
 
 #faq .faq-card .faq-prefix-div {
-  width: 35px;
+  width: 30px;
   text-align: right;
 }
 
@@ -418,8 +428,8 @@ p.service-text__text {
 }
 
 #faq .faq-card .faq-content-div {
-  width: calc(100% - 35px);
-  padding-left: 20px;
+  width: calc(100% - 30px);
+  padding-left: 15px;
 }
 
 /* Footer Component */
