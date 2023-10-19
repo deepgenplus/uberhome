@@ -43,7 +43,6 @@ body {
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
-  z-index: 10;
 }
 
 .shine::before {
@@ -199,13 +198,9 @@ body {
   background: var(--color-skin);
 }
 
-#case .case-container .case-title-div{
-  max-width: 600px;
-}
-
-#case .case-container .case-compare-table {
+/* #case .case-container .case-compare-table {
   width: 465px;
-}
+} */
 
 #case .case-container .case-compare-table table {
   border-spacing: 10px;

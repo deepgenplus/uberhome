@@ -23,19 +23,19 @@ const App = () => {
       <LazyShow>
         <About />
       </LazyShow>
-      {/* <LazyShow>
+      <LazyShow>
         <Case />
       </LazyShow>
-      <LazyShow>
+      {/* <LazyShow>
         <Why />
       </LazyShow>
       <LazyShow>
         <Service />
-      </LazyShow>
+      </LazyShow> */}
       <LazyShow>
         <FAQ />
       </LazyShow>
-      <SendRoom />
+      {/* <SendRoom />
       <Footer /> */}
     </div>
   );

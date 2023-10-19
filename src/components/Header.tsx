@@ -15,9 +15,9 @@ const Menu = () => {
 
   return (
     <div
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 z-50"
     >
-      <div className="topbar max-w-[1240px] m-auto flex justify-between items-center p-4 shadow-md">
+      <div className="topbar m-auto flex justify-between items-center p-4 shadow-md">
         <Link to="/">
           <h1 className="text-2xl text-white">
             {name}
@@ -70,9 +70,10 @@ const Menu = () => {
                 duration={100}
                 to={item.href}
                 offset={-50}
+                key={item.name}
                 className={`cursor-pointer hover:no-underline text-xl font-bold`}
               >
-                <li className='hover:text-gray-500 flex items-center p-5 justify-center hover-header-menu-item' key={item.name} onClick={handleNav}>
+                <li className='hover:text-gray-500 flex items-center p-5 justify-center hover-header-menu-item' onClick={handleNav}>
                     {item.mobile_name}
                 </li>
               </Link>
