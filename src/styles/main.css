@@ -5,6 +5,7 @@
 
 :root {
   --color-primary: #00a0e9;
+  --color-grey: #f2f9fc;
   --color-skin: #fdf4d8;
   --color-tertiaty: #99a0a3;
   --color-green: #1dc245;
@@ -33,6 +34,10 @@ body {
 
 .bg-color-green {
   background-color: var(--color-green);
+}
+
+.bg-color-grey {
+  background-color: var(--color-grey);
 }
 
 .bg-color-skin {
@@ -134,10 +139,6 @@ body {
 }
 
 /* About Component */
-
-#about {
-  background: #f2f9fc;
-}
 
 .about-step-card {
   width: 300px;
@@ -267,30 +268,31 @@ p.service-text__text {
 }
 
 /* Why */
-#why {
-  background: var(--color-primary);
-}
-
 #why .why-info-card {
+  border-radius: 10px;
   background: white;
-  border-radius: 5px;
+  color: black;
 }
 
 #why .why-info-card .why-info-card-title {
-  background: var(--color-green);
-  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: var(--color-primary);
+  font-weight: bold;
 }
 
 #why .why-info-card:nth-child(4) .why-info-card-title {
-  border: 2px solid var(--color-green)!important;
-  background: white!important;
-  color: var(--color-green);
+  background-image: url(/bg_menu_item.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #why .why-recommend-panel .why-feedback-card {
   background: white;
   border: 2px solid transparent;
   border-radius: 7px;
+  height: 375px;
 }
 
 #why .why-recommend-panel .why-feedback-card .why-feedback-card-comment {
@@ -300,6 +302,28 @@ p.service-text__text {
 #why .why-recommend-panel .why-feedback-card .why-feedback-card-content {
   background: var(--color-skin);
   border-radius: 5px;
+}
+
+.slick-prev-arrow, .slick-next-arrow {
+  background-color: var(--color-primary);
+  background-image: url(/arrow_yellow.svg);
+  background-repeat: no-repeat;
+  background-size: 13.5px;
+  background-position: 10px center;
+  border-radius: 50%;
+  height: 38px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 38px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.slick-next-arrow {
+  transform: translateY(-50%) scale(-1, 1);
+  right: 0px;
 }
 
 /* SendRoom */

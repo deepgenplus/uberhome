@@ -147,12 +147,11 @@ const Service = () => {
           ></img>
         </div>
         <div
-          className={`flex flex-col gap-y-4 mx-auto`}
-          style={{ width: '519px', fontSize: '18px' }}
+          className={`flex flex-col gap-y-4 mx-auto w-[519px] text-[18px] max-w-[100%]`}
         >
           <div
             id="comp-l9fux78n"
-            className="KcpHeO tz5f0K comp-l9fux78n wixui-rich-text"
+            className={`tz5f0K comp-l9fux78n wixui-rich-text max-w-[100%]`}
           >
             <h3
               className="font_5 wixui-rich-text__text"

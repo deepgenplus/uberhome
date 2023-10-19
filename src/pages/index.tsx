@@ -26,12 +26,12 @@ const App = () => {
       <LazyShow>
         <Case />
       </LazyShow>
-      {/* <LazyShow>
+      <LazyShow>
         <Why />
       </LazyShow>
       <LazyShow>
         <Service />
-      </LazyShow> */}
+      </LazyShow>
       <LazyShow>
         <FAQ />
       </LazyShow>

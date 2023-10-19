@@ -14,7 +14,7 @@ const WhyFeedback: React.FC<WhyFeedbackProps> = ({
   bottomTip,
 }) => {
   return (
-    <div className={`why-feedback-card bg-white text-black border p-5`}>
+    <div className={`why-feedback-card bg-white text-black border p-5 md:mx-2 mx-auto md:max-w-none max-w-[420px]`}>
       <div className={`flex items-center`}>
         <img
           className={`why-feedback-card-avatar mr-5`}

@@ -8,7 +8,7 @@ const About = () => {
   const { steps } = about;
 
   return (
-    <div id="about" className="w-full text-center py-10">
+    <div id="about" className="w-full text-center bg-color-grey py-10">
       <div className={`achieve flex justify-center md:flex-row flex-col`}>
         <div className={`md:1/2 w-full`}>
           <img

@@ -73,7 +73,7 @@ const Menu = () => {
                 key={item.name}
                 className={`cursor-pointer hover:no-underline text-xl font-bold`}
               >
-                <li className='hover:text-gray-500 flex items-center p-5 justify-center hover-header-menu-item' onClick={handleNav}>
+                <li className='hover:text-black flex items-center p-5 justify-center hover-header-menu-item' onClick={handleNav}>
                     {item.mobile_name}
                 </li>
               </Link>
