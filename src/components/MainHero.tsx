@@ -9,15 +9,15 @@ const MainHero = () => {
       <div className={`main-hero mt-12`}>
         <img src="hero.jpg" className="hero-background" alt="hero" />
         <div className={`cta-panel absolute`}>
-          <div className={`cta-main-panel md:w-[732px] sm:w-[500px] w-[265px] items-center flex`}>
-            <img className={`absolute md:w-[105px] md:h-[105px] md:top-[-30px] md:right-[-30px] w-[62px] h-[62px] top-[-20px] right-[-20px]`} src="01.png" alt="01" />
+          <div className={`cta-main-panel lg:w-[732px] md:w-[680px] sm:w-[500px] w-[265px] items-center flex`}>
+            <img className={`absolute md:w-[105px] md:h-[105px] lg:top-[-30px] lg:right-[-30px] md:top-[-30px] md:right-[-30px] w-[62px] h-[62px] top-[-20px] right-[-20px]`} src="01.png" alt="01" />
             <div className={`w-full`}>
               <div className={`font-semibold md:text-[24px] sm:text-[20px] text-[15px] text-center mx-10`}>
                 {mainHero.title}
               </div>
               <hr className="my-5 mx-8"></hr>
               <div
-                className={`font-bold md:text-[39px] sm:text-[26px] text-[22px] text-center mx-8`}
+                className={`font-bold lg:text-[39px] md:text-[37px] sm:text-[26px] text-[22px] text-center mx-8`}
               >
                 <div>他サイトで見つけた気になるお部屋</div>
                 <div className="md:-mt-4 sm:-mt-2 -mt-1">

@@ -240,7 +240,7 @@
     "leftBottomTip": "※東京23区・その近郊エリアがサービス対象エリアになります。",
     "rightGuideImg": "sendroom.png",
     "lineTab": {
-      "leftTopComment": "<a class='underline' href='#'>利用規約</a>と<span class='underline' href='#'>プライバシーポリシー</span>にご同意いただいた上、LINEで賃貸のLINEアカウントに気になるお部屋のアドレス(URL)と、ご入居希望日をお送りください。<br />最新の空室状況を確認してご連絡します。",
+      "leftTopComment": "<a class='underline' href='/terms'>利用規約</a>と<a class='underline' href='/privacypolicy'>プライバシーポリシー</a>にご同意いただいた上、LINEで賃貸のLINEアカウントに気になるお部屋のアドレス(URL)と、ご入居希望日をお送りください。<br />最新の空室状況を確認してご連絡します。",
       "leftBottomComment": "まずは<span class='text-color-third'>友だち追加</span>をお願いします。<br />クリックするとQRコードが表示されます。",
       "rightImg": "tab_line_chat_screen.png",
       "lineBtnRightComment": "＼ LINE始めました！／",

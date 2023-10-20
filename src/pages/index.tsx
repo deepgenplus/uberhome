@@ -36,7 +36,7 @@ const App = () => {
         <FAQ />
       </LazyShow>
       <SendRoom />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

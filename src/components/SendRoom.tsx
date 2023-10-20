@@ -1,8 +1,3 @@
-import { useState } from 'react';
-
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
-
 import config from '../config/index.json';
 
 const SendRoom = () => {
@@ -92,7 +87,7 @@ const SendRoom = () => {
             />
           </div>
         </div>
-        <div className={`line-guide-panel w-full md:px-12 sm:px-6 px-3 py-8 mt-10`}>
+        <div className={`line-guide-panel w-full md:px-12 sm:px-6 px-3 py-8`}>
           <div className={`text-center font-bold text-xl`}>
             {guides.title}
           </div>
