@@ -91,16 +91,16 @@ const SendRoom = () => {
           <div className={`text-center font-bold text-xl`}>
             {guides.title}
           </div>
-          <div className={`flex-row gap-y-5 mt-5`}>
+          <ul className={`list-decimal list-outside pl-[30px] mt-5`}>
             {guides.contents.map((content, index) => (
-              <div
+              <li
                 key={index}
-                className={`text-lg leading-10 text-justify`}
+                className={`text-lg md:leading-10 leading-8 mt-1 text-justify`}
               >
-                {index + 1}. {content.value}
-              </div>
+                {content.value}
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </div>
