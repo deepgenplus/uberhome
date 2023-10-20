@@ -22,7 +22,7 @@ const PrivacyPolicyContainer = () => {
             <div className={`mt-7 font-bold`}>利用目的</div>
             <div className={``}>
               個人情報を以下の業務遂行・目的のために取得いたします。
-              <ul className={`list-item list-outside pl-[25px]`}>
+              <ul className={`list-disc list-outside pl-[25px]`}>
                 <li>本サービス及びその他のサービスに関するご案内、お問い合せ等への対応のため</li>
                 <li>ご相談、お問い合わせに関する回答のため</li>
                 <li>上記の利用目的に付随する利用目的のため</li>
@@ -37,7 +37,7 @@ const PrivacyPolicyContainer = () => {
             <div className={`mt-7 font-bold`}>3. 個人情報の提供</div>
             <div className={``}>
               個人情報について、お客様ご本人の同意を得ずに当サイトが第三者に提供することは、以下の場合を除き、原則いたしません。
-              <ul className={`list-item list-outside pl-[25px]`}>
+              <ul className={`list-disc list-outside pl-[25px]`}>
                 <li>本サービスを実施するに当たり弊社代理店に対して個人情報を提供する必要がある場合</li>
                 <li>法令に基づく場合</li>
                 <li>人の生命、身体又は財産の保護のために必要がある場合</li>
