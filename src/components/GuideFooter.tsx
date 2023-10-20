@@ -1,5 +1,4 @@
 import config from '../config/index.json';
-import { Link } from 'react-scroll';
 
 const Footer = () => {
   const { footer, guideNavigation } = config;
@@ -17,8 +16,9 @@ const Footer = () => {
       </div>
       <div className={`md:w-1/2 w-full flex md:px-6 px-0 md:py-0 py-5 md:border-none border-b-2 border-black border-dotted`}>
         <div className={`w-1/2 flex flex-col gap-y-2 md:text-justify text-center`}>
-          {guideNavigation.map((item) => (
+          {guideNavigation.map((item, index) => (
             <a
+              key={index}
               href={item.href}
               className={`text-sm cursor-pointer`}
             >

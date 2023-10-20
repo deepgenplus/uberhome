@@ -72,7 +72,7 @@ const SendRoom = () => {
               ></div>
               <div className={`sm:hidden block text-center font-bold mt-2`}>まずは<span className={`text-color-third`}>友だち追加</span>をお願いします</div>
               <div className={`flex sm:flex-row flex-col items-center mt-5`}>
-                <a href='https://qr-official.line.me/gs/M_892achcrz_GW.png?oat_content=qr' target="_blank" className={`shine`}><img src={lineTab.lineBtnImg} alt="LINEBTN"></img></a>
+                <a href='https://lin.ee/embmgjs' target="_blank" className={`shine`}><img src={lineTab.lineBtnImg} alt="LINEBTN"></img></a>
                 <span className={`2xl:text-[26px] xl:text-[22px] lg:text-[23px] md:text-[22px] sm:text-[20px] font-bold sm:ml-2 sm:mt-0 ml-0 mt-3`}>
                   {lineTab.lineBtnRightComment}
                 </span>
