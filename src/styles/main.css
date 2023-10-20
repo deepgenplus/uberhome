@@ -440,3 +440,22 @@ p.service-text__text {
 #footer {
   background: var(--color-primary);
 }
+
+/* Term Component */
+.term-title::after, .term-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  width: 43px;
+  height: 1px;
+}
+
+.term-title::before {
+  left: 0;
+}
+
+.term-title::after {
+  right: 0;
+}
