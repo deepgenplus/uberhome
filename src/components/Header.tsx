@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from 'react-scroll';
 
@@ -15,7 +15,7 @@ const Menu = () => {
 
   return (
     <div
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 z-50"
+      className="fixed left-0 top-0 w-full ease-in duration-300 z-50"
     >
       <div className="topbar m-auto flex justify-between items-center px-4 py-2 shadow-md">
         <Link to="/">
@@ -84,7 +84,7 @@ const Menu = () => {
               </a>
             </li>
             <li className={`items-center px-7 justify-center text-black md:`} onClick={handleNav}>
-              <div className={`text-xl px-8 py-4 shadow-md rounded-lg bg-color-skin flex flex-col gap-y-5 w-full`}>
+              <div className={`md:text-xl sm:text-lg px-8 py-4 shadow-md rounded-lg bg-color-skin flex flex-col gap-y-5 w-full`}>
                 <div className={`flex sm:gap-x-12 gap-x-3`}>
                   <div className='text-right w-2/5'>対応時間</div>
                   <div className='text-left w-3/5 font-bold'>10:00〜19:00</div>

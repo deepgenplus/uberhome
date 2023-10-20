@@ -140,6 +140,13 @@ body {
 
 /* About Component */
 
+/* #about {
+  background-image: url(/bg_property_sp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+} */
+
 .about-step-card {
   width: 300px;
   height: 430px;
@@ -332,6 +339,10 @@ p.service-text__text {
   background: repeating-linear-gradient(45deg, #FFF8E3, #FFF8E3 1px, #FFEEBA 0, #FFEEBA 6px);
 }
 
+#service .service-summary-card {
+  border: 2px solid var(--color-primary)
+}
+
 #service .service-comments {
   background-color: #f4f4f4;
 }
@@ -340,14 +351,6 @@ p.service-text__text {
 #sendroom hr {
   border-color: var(--color-primary);
   border-width: 3px;
-}
-
-#sendroom .phone-guide-panel .phone-guide-left-title {
-  background: var(--color-primary);
-}
-
-#sendroom .phone-guide-panel .phone-guide-left-comment {
-  background: var(--color-skin);
 }
 
 #sendroom .sendroom-tabs {
@@ -436,4 +439,23 @@ p.service-text__text {
 
 #footer {
   background: var(--color-primary);
+}
+
+/* Term Component */
+.term-title::after, .term-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  width: 43px;
+  height: 1px;
+}
+
+.term-title::before {
+  left: 0;
+}
+
+.term-title::after {
+  right: 0;
 }

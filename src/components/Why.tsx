@@ -1,4 +1,4 @@
-import Slider, { Settings } from 'react-slick';
+import Slider from 'react-slick';
 import WhyFeedback from './WhyFeedback';
 import CustomPrevArrow from './CustomPrevArrow';
 import CustomNextArrow from './CustomNextArrow';

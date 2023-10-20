@@ -14,7 +14,6 @@
       "mobile_name": "初期費用の例",
       "href": "case"
     },
-
     {
       "name": "Why",
       "mobile_name": "仲介手数料が0円の理由",
@@ -29,6 +28,33 @@
       "name": "FAQ",
       "mobile_name": "よくある質問",
       "href": "faq"
+    }
+  ],
+  "guideNavigation": [
+    {
+      "name": "About",
+      "mobile_name": "LINEで賃貸とは",
+      "href": "/#about"
+    },
+    {
+      "name": "Case",
+      "mobile_name": "初期費用の例",
+      "href": "/#case"
+    },
+    {
+      "name": "Why",
+      "mobile_name": "仲介手数料が0円の理由",
+      "href": "/#why"
+    },
+    {
+      "name": "Service",
+      "mobile_name": "サービス概要",
+      "href": "/#service"
+    },
+    {
+      "name": "FAQ",
+      "mobile_name": "よくある質問",
+      "href": "/#faq"
     }
   ],
   "callToAction": {
@@ -240,7 +266,7 @@
     "leftBottomTip": "※東京23区・その近郊エリアがサービス対象エリアになります。",
     "rightGuideImg": "sendroom.png",
     "lineTab": {
-      "leftTopComment": "<a class='underline-offset-4' href='#'>利用規約</a>と<span class='underline-offset-4' href='#'>プライバシーポリシー</span>にご同意いただいた上、LINEで賃貸のLINEアカウントに気になるお部屋のアドレス(URL)と、ご入居希望日をお送りください。<br />最新の空室状況を確認してご連絡します。",
+      "leftTopComment": "<a class='underline' href='/terms'>利用規約</a>と<a class='underline' href='/privacypolicy'>プライバシーポリシー</a>にご同意いただいた上、LINEで賃貸のLINEアカウントに気になるお部屋のアドレス(URL)と、ご入居希望日をお送りください。<br />最新の空室状況を確認してご連絡します。",
       "leftBottomComment": "まずは<span class='text-color-third'>友だち追加</span>をお願いします。<br />クリックするとQRコードが表示されます。",
       "rightImg": "tab_line_chat_screen.png",
       "lineBtnRightComment": "＼ LINE始めました！／",
@@ -299,45 +325,6 @@
     "contacts": [
       {"content": "LINEで賃貸お客様サポート"},
       {"content": "support@uberhome.info"}
-    ]
-  },
-  "pricing": {
-    "title": "Pricing",
-    "items": [
-      {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
-        "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
-        ]
-      },
-      {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
-
-        "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
-        ]
-      },
-      {
-        "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
-        "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
-        ]
-      }
     ]
   },
   "service": {
