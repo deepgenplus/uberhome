@@ -186,11 +186,11 @@
           },
           {
             "key": "ー別名目の費用",
-            "value": "<span class='text-2xl font-bold'>ないです</span>"
+            "value": "<span class='text-2xl font-bold'>なし</span>"
           },
           {
             "key": "おとり物件",
-            "value": "<span class='text-2xl font-bold'>ないです</span>"
+            "value": "<span class='text-2xl font-bold'>なし</span>"
           },
           {
             "key": "ご紹介方法",
@@ -236,7 +236,7 @@
         "img": "why_feedback_avatar_1.png",
         "comment": "不動産会社が勧めてくるお部屋は自分が物件サイトで見ていたお部屋ばかり。それなら自分で探しているのと変わらないと思った方。",
         "content": "LINEで賃貸なら、その物件サイトで見ていたお部屋を仲介手数料0円 or 2,5万円てご紹介することができます。",
-        "bottomTip": "※一部、特定の会社てし力、扱えないお部屋がごさいます。"
+        "bottomTip": "※一部、特定の会社でしか扱えないお部屋がございます。"
       },
       {
         "img": "why_feedback_avatar_2.png",
