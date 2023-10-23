@@ -49,11 +49,20 @@ const Menu = () => {
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className="block md:hidden z-10">
+        <div onClick={handleNav} className="flex md:hidden items-center">
           {nav ? (
-            <AiOutlineClose size={20} className={`text-white`} />
+            <></>
           ) : (
-            <AiOutlineMenu size={20} className={`text-white`} />
+            <button
+              className={`bg-color-green rounded-full text-white px-3 py-2 shine shadow-md mr-4 z-0`}
+            >
+              お部屋を送る
+            </button>
+          )}
+          {nav ? (
+            <AiOutlineClose size={20} className={`text-white z-10`} />
+          ) : (
+            <AiOutlineMenu size={20} className={`text-white z-10`} />
           )}
         </div>
         {/* Mobile Menu */}

@@ -104,9 +104,10 @@ body {
 
 .main-hero {
   position: relative;
+  background: url(/hero_bg.png);
 }
 
-.main-hero .hero-background {
+/* .main-hero .hero-background {
   width: 100%;
   height: 517px;
   object-fit: cover;
@@ -136,7 +137,7 @@ body {
   font-size: 24px;
   background-color: var(--color-third);
   border-radius: 7px;
-}
+} */
 
 /* About Component */
 
@@ -404,6 +405,14 @@ p.service-text__text {
 
 #sendroom .line-guide-panel {
   background: var(--color-skin);
+}
+
+/* Middle Send Room Component */
+.middle-send-room-banner {
+  background: url(/bg_property_sp.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* FAQ */

@@ -9,7 +9,9 @@ import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
 import SendRoom from '../components/SendRoom';
 import Service from '../components/Service';
+import ToCustomer from '../components/ToCustomer';
 import Why from '../components/Why';
+import MiddleSendRoomBanner from '../components/MiddleSendRoomBanner';
 
 const App = () => {
   return (
@@ -33,9 +35,17 @@ const App = () => {
         <Service />
       </LazyShow>
       <LazyShow>
+        <SendRoom />
+      </LazyShow>
+      <LazyShow>
+        <ToCustomer />
+      </LazyShow>
+      <LazyShow>
+        <MiddleSendRoomBanner />
+      </LazyShow>
+      <LazyShow>
         <FAQ />
       </LazyShow>
-      <SendRoom />
       <Footer />
     </div>
   );

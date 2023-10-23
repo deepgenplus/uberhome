@@ -2,7 +2,7 @@ import config from '../config/index.json';
 
 const Footer = () => {
   const { footer, guideNavigation } = config;
-  const { secondLinks, firmSummary, contacts } = footer;
+  const { secondLinks, firmSummary } = footer;
 
   return (
     <div className={`w-full py-10 px-5 md:flex text-black border-t-2 border-black bg-white`}>
@@ -37,14 +37,6 @@ const Footer = () => {
       <div className={`md:w-1/4 w-full md:text-left text-center md:py-0 pt-5`}>
         <div className="w-full flex flex-col gap-y-2">
           {firmSummary.map((record, index) => (
-            <div key={index} className={`text-sm`}>
-              {record.content}
-            </div>
-          ))}
-        </div>
-        <div className={`text-sm py-2`}>【お問い合わせ先】</div>
-        <div className="w-full flex flex-col gap-y-2">
-          {contacts.map((record, index) => (
             <div key={index} className={`text-sm`}>
               {record.content}
             </div>
