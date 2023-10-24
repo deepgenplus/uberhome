@@ -6,7 +6,7 @@ const MiddleSendRoomBanner = () => {
   return (
     <div className={`middle-send-room-banner w-full md:h-[500px] h-[300px] border-t-4 border-white flex flex-col items-center justify-center`}>
       <div className={`w-full`}>
-        <div className={`font-semibold md:text-[24px] sm:text-[20px] text-[15px] text-center mx-10`}>
+        <div className={`font-semibold md:text-[24px] sm:text-[20px] text-[15px] text-center`}>
           {mainHero.title}
         </div>
         <div className={`w-full font-bold lg:text-[30px] md:text-[28px] sm:text-[20px] text-[18px] text-center mt-6`}>
@@ -21,11 +21,13 @@ const MiddleSendRoomBanner = () => {
           </div>
         </div>
       </div>
-      <button
-        className={`bg-color-green rounded-full md:text-2xl text-xl font-bold text-center text-white mt-8 px-5 py-2 shadow-lg shine block`}
-      >
-        {mainHero.sendBtnTitle}
-      </button>
+      <a href="https://lin.ee/embmgjs">
+        <button
+          className={`bg-color-green rounded-full md:text-2xl text-xl font-bold text-center text-white mt-8 px-5 py-2 shadow-lg shine block`}
+        >
+          {mainHero.sendBtnTitle}
+        </button>
+      </a>
     </div>
   )
 }

@@ -40,29 +40,33 @@ const Menu = () => {
             </li>
           ))}
           <li className='px-4'>
-            <button
-              className={`bg-color-green rounded-full text-white px-5 py-2 shine shadow-md`}
-            >
-              お部屋を送る
-            </button>
+            <a href="https://lin.ee/embmgjs">
+              <button
+                className={`bg-color-green rounded-full text-white px-5 py-2 shine shadow-md`}
+              >
+                お部屋を送る
+              </button>
+            </a>
           </li>
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className="flex md:hidden items-center">
+        <div className="flex md:hidden items-center">
           {nav ? (
             <></>
           ) : (
-            <button
-              className={`bg-color-green rounded-full text-white px-3 py-2 shine shadow-md mr-4 z-0`}
-            >
-              お部屋を送る
-            </button>
+            <a href='https://lin.ee/embmgjs' className={`z-0`}>
+              <button
+                className={`bg-color-green rounded-full text-white px-3 py-2 shine shadow-md mr-4`}
+              >
+                お部屋を送る
+              </button>
+            </a>
           )}
           {nav ? (
-            <AiOutlineClose size={20} className={`text-white z-10`} />
+            <AiOutlineClose onClick={handleNav} size={20} className={`text-white z-10`} />
           ) : (
-            <AiOutlineMenu size={20} className={`text-white z-10`} />
+            <AiOutlineMenu onClick={handleNav} size={20} className={`text-white z-10`} />
           )}
         </div>
         {/* Mobile Menu */}
@@ -88,7 +92,7 @@ const Menu = () => {
               </Link>
             ))}
             <li className={`items-center p-5 justify-center`}>
-              <a href='/'>
+              <a href='https://lin.ee/embmgjs'>
                 <button className={`bg-color-green font-bold text-2xl rounded-full shine shadow-md px-6 py-3`}>{mainHero.sendBtnTitle}</button>
               </a>
             </li>

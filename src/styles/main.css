@@ -10,6 +10,7 @@
   --color-tertiaty: #99a0a3;
   --color-green: #1dc245;
   --color-third: #c43735;
+  --color-second-grey: #e6e6e6;
 }
 
 html {
@@ -38,6 +39,10 @@ body {
 
 .bg-color-grey {
   background-color: var(--color-grey);
+}
+
+.bg-color-second-grey {
+  background-color: var(--color-second-grey);
 }
 
 .bg-color-skin {
@@ -207,18 +212,8 @@ body {
   background: var(--color-skin);
 }
 
-/* #case .case-container .case-compare-table {
-  width: 465px;
-} */
-
-#case .case-container .case-compare-table table {
-  border-spacing: 10px;
-}
-
-#case .case-container .case-compare-table table th {
-  border: none;
-  background: #e6e6e6;
-  text-align: center;
+#case table {
+  border-spacing: 7px;
 }
 
 #case .case-container .case-compare-table:nth-child(2) table th {
@@ -229,12 +224,6 @@ body {
 
 #case .case-container .case-compare-table table td {
   height: 75px;
-}
-
-#case .case-container .case-compare-table table td:first-child {
-  border: none;
-  background: #e6e6e6;
-  text-align: center;
 }
 
 #case .case-container .case-compare-table table td:nth-child(2) {
@@ -289,7 +278,7 @@ p.service-text__text {
   font-weight: bold;
 }
 
-#why .why-info-card:nth-child(4) .why-info-card-title {
+.pattern-background {
   background-image: url(/bg_menu_item.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -325,7 +314,7 @@ p.service-text__text {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 38px;
-  z-index: 10;
+  z-index: 9;
   cursor: pointer;
 }
 
@@ -355,11 +344,11 @@ p.service-text__text {
 }
 
 #sendroom .sendroom-tabs {
-  border: 2px solid #e6e6e6;
+  border: 2px solid var(--color-second-grey);
 }
 
 #sendroom .sendroom-tabs .sendroom-tab {
-  background: #e6e6e6;
+  background: var(--color-second-grey);
   color: black;
   border: 1px solid white;
 }
@@ -384,7 +373,7 @@ p.service-text__text {
   height: 45px;
   padding: 2px 15px;
   margin: 5px 0px;
-  border: 2px solid #e6e6e6;
+  border: 2px solid var(--color-second-grey);
 }
 
 #sendroom .sendroom-form .sendroom-form-input:focus {
@@ -395,7 +384,7 @@ p.service-text__text {
   width: 100%;
   padding: 2px 15px;
   margin: 5px 0px;
-  border: 2px solid #e6e6e6;
+  border: 2px solid var(--color-second-grey);
 }
 
 #sendroom .sendroom-form .btn-sendroom-form-submit {

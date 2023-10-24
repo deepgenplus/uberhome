@@ -6,7 +6,7 @@ import config from '../config/index.json';
 
 const Service = () => {
   const { service } = config;
-  const { summary, comments, toClients } = service;
+  const { summary, comments } = service;
 
   return (
     <div id="service">

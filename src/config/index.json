@@ -98,52 +98,36 @@
     "title": "<span class='text-color-primary'>初期費用</span>を<span class='text-color-primary'>最小限</span>に抑えてお届け。",
     "subtitle1": "サービス手数料や別名目を上乗せすることは一切ありません。<br>その他、仲介会社独自でご紹介しているオプションサービス*の上乗せもありません。",
     "subtitle2": "*管理会社指定のオプションサービスの場合は実費料金が発生します。",
-    "firstCompare": {
-      "title": "​家賃8万円、敷金・礼金・仲介手数料が1ヶ月の場合",
+    "firstTable": {
+      "mainTitle": "​家賃8万円、敷金・礼金・仲介手数料が1ヶ月の場合",
       "title_img": "case_compare_title_1.png",
       "title_img_sm": "case_compare_title_1_sm.png",
-      "table1": {
-        "title": "一般的な初期費用",
-        "rows": [
-          {
-            "key": "前家賃",
-            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
-          },
-          {
-            "key": "敷金",
-            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
-          },
-          {
-            "key": "礼金",
-            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
-          },
-          {
-            "key": "仲介手数料",
-            "value": "<span class='text-2xl font-bold'>88,000</span> <span class='font-bold'>円</span>"
-          }
-        ]
-      },
-      "table2": {
-        "title": "LINEで賃貸の初期費用",
-        "rows": [
-          {
-            "key": "前家賃",
-            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
-          },
-          {
-            "key": "敷金",
-            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
-          },
-          {
-            "key": "礼金",
-            "value": "<span class='text-2xl font-bold'>80,000</span> <span class='font-bold'>円</span>"
-          },
-          {
-            "key": "仲介手数料",
-            "value": "<span class='text-4xl font-bold text-color-third'>0</span> <span class='font-bold text-color-third'>円</span>"
-          }
-        ]
-      },
+      "title1": "一般的な初期費用",
+      "title1_sm": "一般的な<br />初期費用",
+      "title2": "LINEで賃貸の初期費用",
+      "title2_sm": "LINEで賃貸の<br />初期費用",
+      "rows": [
+        {
+          "key": "前家賃",
+          "value1": "<span class='md:text-2xl text-[20px] font-bold'>80,000</span> <span class='font-bold'>円</span>",
+          "value2": "<span class='md:text-2xl text-[20px] font-bold'>80,000</span> <span class='font-bold'>円</span>"
+        },
+        {
+          "key": "敷金",
+          "value1": "<span class='md:text-2xl text-[20px] font-bold'>80,000</span> <span class='font-bold'>円</span>",
+          "value2": "<span class='md:text-2xl text-[20px] font-bold'>80,000</span> <span class='font-bold'>円</span>"
+        },
+        {
+          "key": "礼金",
+          "value1": "<span class='md:text-2xl text-[20px] font-bold'>80,000</span> <span class='font-bold'>円</span>",
+          "value2": "<span class='md:text-2xl text-[20px] font-bold'>80,000</span> <span class='font-bold'>円</span>"
+        },
+        {
+          "key": "仲介手数料",
+          "value1": "<span class='md:text-2xl text-[20px] font-bold'>88,000</span> <span class='font-bold'>円</span>",
+          "value2": "<span class='md:text-4xl text-[24px] font-bold text-color-third'>0</span> <span class='font-bold text-color-third'>円</span>"
+        }
+      ],
       "comments": [
         {
           "content": "※その他 諸費用として鍵交換料・火災保険料等がかかります。"
@@ -153,57 +137,42 @@
         }
       ]
     },
-    "secondCompare": {
-      "title": "賃貸ポータルサイトの場合",
+    "secondTable": {
+      "mainTitle": "賃貸ポータルサイトの場合",
       "title_img": "case_compare_title_2.png",
-      "table1": {
-        "title": "一般的な初期費用",
-        "rows": [
-          {
-            "key": "仲介手数純",
-            "value": "賃料の1ヶ月分など"
-          },
-          {
-            "key": "ー別名目の費用",
-            "value": "<span>オプションサービス等の<br>不要な上乗せの可能性も</span>"
-          },
-          {
-            "key": "おとり物件",
-            "value": "<span>すでに決まっている<br>可能性のお部屋も</span>"
-          },
-          {
-            "key": "ご紹介方法",
-            "value": "とにかく一度来店を勧められる"
-          }
-        ]
-      },
-      "table2": {
-        "title": "LINEで賃貸の場合",
-        "rows": [
-          {
-            "key": "仲介手数純",
-            "value": "<span class='font-bold'><span class='text-color-third text-4xl'>0</span><span> 円 or </span><span class='text-color-third text-4xl'>2,5</span> 万円</span>"
-          },
-          {
-            "key": "ー別名目の費用",
-            "value": "<span class='text-2xl font-bold'>なし</span>"
-          },
-          {
-            "key": "おとり物件",
-            "value": "<span class='text-2xl font-bold'>なし</span>"
-          },
-          {
-            "key": "ご紹介方法",
-            "value": "<span class='text-xl font-bold'>物件情報を送るだけ</span>"
-          }
-        ]
-      },
-      "comments": [
+      "title1": "一般的な初期費用",
+      "title1_sm": "一般的な<br />初期費用",
+      "title2": "LINEで賃貸の初期費用",
+      "title2_sm": "LINEで賃貸の<br />初期費用",
+      "rows": [
         {
-          "content": "※その他 諸費用として鍵交換料・火災保険料等がかかります。"
+          "key": "仲介手数純",
+          "key_sm": "仲介手数純",
+          "value1": "賃料の1ヶ月分など",
+          "value2": "<span class='font-bold'><span class='text-color-third text-4xl'>0</span><span> 円 or </span><span class='text-color-third text-4xl'>2,5</span> 万円</span>",
+          "value2_sm": "<span class='font-bold'><span class='text-color-third text-[18px]'>0</span><span> 円 or </span><span class='text-color-third text-[18px]'>2,5</span> 万円</span>"
+
         },
         {
-          "content": "※オーナー様から広告料がない場合は、仲介手数料25,000円（税込）がかかります。"
+          "key": "ー別名目の費用",
+          "key_sm": "ー別名目の<br/>費用",
+          "value1": "<span>オプションサービス等の不要な上乗せの可能性も</span>",
+          "value2": "<span class='text-2xl font-bold'>なし</span>",
+          "value2_sm": "<span class='text-[15px] font-bold'>なし</span>"
+        },
+        {
+          "key": "おとり物件",
+          "key_sm": "おとり物件",
+          "value1": "<span>すでに決まっている可能性のお部屋も</span>",
+          "value2": "<span class='text-2xl font-bold'>なし</span>",
+          "value2_sm": "<span class='text-[15px] font-bold'>なし</span>"
+        },
+        {
+          "key": "ご紹介方法",
+          "key_sm": "ご紹介方法",
+          "value1": "とにかく一度来店を勧められる",
+          "value2": "<span class='text-xl font-bold'>物件情報を送るだけ</span>",
+          "value2_sm": "<span class='text-[14px] font-bold'>物件情報を送るだけ</span>"
         }
       ]
     }
